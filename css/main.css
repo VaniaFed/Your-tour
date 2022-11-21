@@ -1,10 +1,1 @@
-@import url(reset.css);
-
-:root {
-    --container-width: 1170px;
-}
-
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-}
+@import url(global.css);
