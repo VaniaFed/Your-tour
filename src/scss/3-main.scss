@@ -1,12 +1,12 @@
-@import url(global.css);
+@import '1-variables.scss';
 
 /* Header */
 
 .header {
     min-height: 743px;
-    background: url(/img/header/header-img.jpg) no-repeat;
+    background: url(img/header/header-img.jpg) no-repeat;
     background-size: cover;
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .header__top {
@@ -45,15 +45,15 @@
 }
 
 .nav__item:hover::after {
-    background: var(--color-white);
+    background: $color-white;
 }
 
 .nav__link {
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .nav__phone {
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .header__content {
@@ -65,14 +65,14 @@
 }
 
 .header__title {
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .header__desc {
     max-width: 562px;
     margin: 0 auto;
     margin-top: 50px;
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .header__button {

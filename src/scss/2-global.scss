@@ -1,22 +1,4 @@
-@import url(reset.css);
-
-:root {
-    --container-width-desktop: 1170px;
-    --container-width-laptop: 918px;
-
-    --color-white: #fff;
-    --color-black: #1B1F2B;
-    --color-orange-200: #EFA501;
-    --color-orange-100: #F8E6BE;
-    --color-green-400: #286562;
-    --color-green-300: #3B7E7B;
-    --color-green-200: #627F7E;
-    --color-gray-300: #A6A6A6;
-    --color-gray-200: #D9DFDB;
-    --color-gray-100: #F1F3F2;
-    --color-beige-200: #F4F0E9;
-    --color-beige-100: #F9F7F4;
-}
+@import '1-variables.scss';
 
 * {
     box-sizing: border-box;
@@ -24,7 +6,7 @@
 
 body {
     font: 20px Roboto, sans-serif;
-    color: var(--color-black);
+    color: $color-black;
 }
 
 a {
@@ -37,7 +19,7 @@ h3,
 .p-big,
 .p-normal,
 .p-small {
-    color: var(--color-black);
+    color: $color-black;
 }
 
 h1 {
@@ -90,13 +72,13 @@ button {
 }
 
 .btn-small:hover {
-    background: var(--color-orange-200);
-    color: var(--color-white);
+    background: $color-orange-200;
+    color: $color-white;
 }
 
 .btn-small:active {
-    background: var(--color-orange-100);
-    color: var(--color-black);
+    background: $color-orange-100;
+    color: $color-black;
 }
 
 .btn-large {
@@ -112,6 +94,6 @@ button {
 }
 
 .container {
-    max-width: var(--container-width);
+    max-width: $container-width-desktop;
     margin: 0 auto;
 }
