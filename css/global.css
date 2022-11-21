@@ -1,7 +1,8 @@
 @import url(reset.css);
 
 :root {
-    --container-width: 1170px;
+    --container-width-desktop: 1170px;
+    --container-width-laptop: 918px;
 
     --color-white: #fff;
     --color-black: #1B1F2B;
@@ -17,11 +18,18 @@
     --color-beige-100: #F9F7F4;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 20px Roboto;
+    font: 20px Roboto, sans-serif;
     color: var(--color-black);
 }
 
+a {
+    text-decoration: none;
+}
 
 h1,
 h2,
@@ -36,7 +44,7 @@ h1 {
     font-size: 96px;
     font-weight: 700;
     line-height: 104.64px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 h2 {
@@ -67,7 +75,40 @@ h3 {
     font-size: 17px;
     font-weight: 400;
     line-height: 24.14px;
-    letter-spacing: -1%;
+    letter-spacing: -0.01em;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-small {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-small:hover {
+    background: var(--color-orange-200);
+    color: var(--color-white);
+}
+
+.btn-small:active {
+    background: var(--color-orange-100);
+    color: var(--color-black);
+}
+
+.btn-large {
+
+}
+
+.btn-with-link {
+
+}
+
+.btn-link {
+
 }
 
 .container {
