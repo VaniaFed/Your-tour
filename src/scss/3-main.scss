@@ -35,7 +35,7 @@
     @include media-tablet {
         display: none;
     }
-    
+
     @include media-mobile {
         display: none;
     }
@@ -175,11 +175,16 @@
         right: 0;
         bottom: 0;
         left: 0;
+        z-index: 1;
         background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
     }
 
     @include media-mobile {
         border-radius: 20px;
+    }
+
+    &:hover .tour-card__image {
+        transform: scale(1.2);
     }
 }
 
@@ -188,6 +193,7 @@
     top: 50px;
     left: 50px;
     bottom: 50px;
+    z-index: 2;
 
     @include media-mobile {
         top: 25px;
@@ -197,6 +203,7 @@
 }
 
 .tour-card__image {
+    transition: transform 300ms ease;
     width: 100%;
 }
 
