@@ -1,3 +1,38 @@
+@mixin h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 104.64px;
+    letter-spacing: 0.02em;
+
+    @include media-mobile {
+        font-size: 34px;
+        line-height: 38.08px;
+    } 
+}
+
+@mixin h2 {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 73.16px;
+
+    @include media-mobile {
+        font-size: 34px;
+        line-height: 38.08px;
+    }
+}
+
+@mixin h3 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42.7px;
+
+    @include media-mobile {
+        font-size: 23px;
+        line-height: 27.6px;
+        letter-spacing: 0.04em;
+    }
+}
+
 @mixin pBig {
     font-size: 23px;
     font-weight: 700;

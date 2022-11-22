@@ -1,5 +1,6 @@
 @import '1-variables.scss';
 @import 'media';
+@import 'mixins';
 
 /* Header */
 
@@ -30,6 +31,11 @@
 
 .nav__list {
     display: flex;
+
+    @include media-tablet {
+        display: none;
+    }
+    
     @include media-mobile {
         display: none;
     }
@@ -85,6 +91,10 @@
 
 .header__title {
     color: $color-white;
+
+    @include media-tablet {
+        @include h2;
+    }
 }
 
 .header__desc {
@@ -123,6 +133,11 @@
     justify-content: center;
     column-gap: 30px;
     row-gap: 10px;
+
+    @include media-tablet {
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
 
     @include media-mobile {
         column-gap: 10px;
