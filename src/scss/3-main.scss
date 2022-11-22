@@ -1,9 +1,9 @@
 @import '1-variables.scss';
+@import 'media';
 
 /* Header */
 
 .header {
-    min-height: 743px;
     background: url(img/header/header-img.jpg) no-repeat;
     background-size: cover;
     color: $color-white;
@@ -21,16 +21,25 @@
     width: 100%;
 }
 
-.nav__logo {
+.nav__logo-pic {
     width: 181.84px;
+    @include media-mobile {
+        width: 133px;
+    }
 }
 
 .nav__list {
     display: flex;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .nav__item {
     margin-left: 50px;
+    @include media-laptop {
+        margin-left: 30px;
+    }
 }
 
 .nav__item:first-child {
@@ -54,12 +63,22 @@
 
 .nav__phone {
     color: $color-white;
+    @include media-mobile {
+        font-size: 16px;
+        line-height: 22.72px;
+    }
 }
 
 .header__content {
     padding: 119px 0;
 
     width: 768px;
+
+    @include media-mobile {
+        padding: 52px 20px;
+        width: 100%;
+    }
+
     text-align: center;
     margin: 0 auto;
 }
@@ -73,8 +92,16 @@
     margin: 0 auto;
     margin-top: 50px;
     color: $color-white;
+
+    @include media-mobile {
+        margin-top: 40px;
+    }
 }
 
 .header__button {
     margin-top: 50px;
+    
+    @include media-mobile {
+        margin-top: 40px;
+    }
 }
