@@ -1,0 +1,63 @@
+@import '../utilities/variables';
+@import '../utilities/media';
+@import '../utilities/mixins';
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-small {
+    @include pSmall;
+
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-small:hover {
+    background: $color-orange-200;
+    color: $color-white;
+}
+
+.btn-small:active {
+    background: $color-orange-100;
+    color: $color-black;
+}
+
+.btn-large {
+
+}
+
+.btn-more {
+    @include pBig;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: none;
+    background: none;
+    color: $color-white;
+
+    &::after {
+        content: '';
+        display: inline-flex;
+        width: 24px;
+        height: 26px;
+        align-items: center;
+        background: url('icons/arrow bt.svg');
+    }
+
+    &:hover {
+        background: $color-green-400;
+    }
+
+    &:active {
+        background: $color-orange-200;
+    }
+}
+
+.btn-link {
+
+}

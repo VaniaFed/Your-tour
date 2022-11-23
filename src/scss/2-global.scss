@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'media';
-@import 'mixins';
+@import 'utilities/variables';
+@import 'utilities/media';
+@import 'utilities/mixins';
 
 * {
     box-sizing: border-box;
@@ -10,158 +10,6 @@ body {
     font: 20px Roboto, sans-serif;
     background: $color-beige-100;
     color: $color-black;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-.p-big,
-.p-normal,
-.p-small {
-    color: $color-black;
-}
-
-h1 {
-    @include h1;
-}
-
-h2 {
-    @include h2;
-}
-
-h3 {
-    @include h3;
-}
-
-.p-big {
-    @include pBig;
-}
-
-.p-normal {
-    @include pNormal;
-}
-
-.p-small {
-    @include pSmall;
-}
-
-button {
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.btn-small {
-    padding: 5px 20px;
-    border-radius: 10px;
-    border: none;
-}
-
-.btn-small:hover {
-    background: $color-orange-200;
-    color: $color-white;
-}
-
-.btn-small:active {
-    background: $color-orange-100;
-    color: $color-black;
-}
-
-.btn-large {
-
-}
-
-.btn-more {
-    @include pBig;
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    padding: 7px 20px;
-    border-radius: 50px;
-    border: none;
-    background: none;
-    color: $color-white;
-
-    &::after {
-        content: '';
-        display: inline-flex;
-        width: 24px;
-        height: 26px;
-        align-items: center;
-        background: url('icons/arrow bt.svg');
-    }
-
-    &:hover {
-        background: $color-green-400;
-    }
-
-    &:active {
-        background: $color-orange-200;
-    }
-}
-
-.btn-link {
-
-}
-
-section {
-    padding-top: 135px !important;
-
-    @include media-mobile {
-        padding-top: 75px !important;
-    }
-}
-
-.section__text {
-    padding-bottom: 100px;
-    
-    @include media-mobile {
-        padding-bottom: 50px;
-    }
-}
-
-.tab {
-    @include pBig;
-    position: relative;
-    cursor: pointer;
-
-    &:not(.tab_active):hover::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        bottom: 0px;
-        @include media-mobile {
-            bottom: 0;
-        }
-
-        background: $color-black;
-    }
-}
-
-.tab_active {
-    color: $color-orange-200;
-
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        bottom: 0px;
-        @include media-mobile {
-            bottom: 0;
-        }
-
-        background: $color-orange-200;
-    }
-
 }
 
 .container {
@@ -179,3 +27,11 @@ section {
 
     margin: 0 auto;
 }
+
+.hidden {
+    display: none;
+}
+
+
+
+

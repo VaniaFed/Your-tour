@@ -1,0 +1,117 @@
+@import '../utilities/variables';
+@import '../utilities/media';
+@import '../utilities/mixins';
+
+.choose-your-tour__title {
+    margin-bottom: 35px;
+
+    @include media-mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.choose-your-tour__tabs {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    min-height: 34px;
+
+    @include media-tablet {
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    @include media-mobile {
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+.choose-your-tour__tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    @include media-laptop {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 18px;
+    }
+
+    @include media-mobile {
+        grid-template-columns: 1fr;
+        grid-gap: 18px;
+    }
+}
+
+.tour-card {
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    }
+
+    @include media-mobile {
+        border-radius: 20px;
+    }
+
+    &:hover .tour-card__image {
+        transform: scale(1.2);
+    }
+}
+
+.tour-card__content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    z-index: 2;
+
+    @include media-mobile {
+        top: 25px;
+        left: 25px;
+        bottom: 25px;
+    }
+}
+
+.tour-card__image {
+    width: 100%;
+    transition: transform 300ms ease;
+
+    @include media-laptop {
+        height: 531px;
+        object-fit: cover;
+    }
+
+    @include media-mobile {
+        height: 318px;
+    }
+}
+
+.tour-card__title {
+    color: $color-white;
+
+}
+.tour-card__price {
+    @include pSmall;
+    
+    margin-top: 16px;
+    color: $color-white;
+}
+
+.tour-card__btn {
+    position: absolute;
+    bottom: -7px;
+    left: -20px;
+}

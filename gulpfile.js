@@ -20,13 +20,19 @@ function html() {
 }
 
 function scss() {
-    return src('src/scss/**.scss')
+    return src('src/scss/**/*.scss')
         .pipe(sass())
         .pipe(autoprefixer({
 			cascade: false
 		}))
         .pipe(csso())
         .pipe(concat('main.css'))
+        .pipe(dest('dist'))
+}
+
+function js() {
+    return src('src/*.js')
+        .pipe(concat('index.js'))
         .pipe(dest('dist'))
 }
 
@@ -52,9 +58,10 @@ function serve() {
     })
 
     watch('src/**.html', series(html)).on('change', sync.reload);
-    watch('src/scss/**.scss', series(scss)).on('change', sync.reload);
+    watch('src/scss/**/*.scss', series(scss)).on('change', sync.reload);
+    watch('src/*.js', series(js)).on('change', sync.reload);
 }
 
-exports.build = series(clear, scss, html, img, svg);
-exports.serve = series(clear, scss, html, img, svg, serve);
+exports.build = series(clear, scss, js, html, img, svg);
+exports.serve = series(clear, scss, js, html, img, svg, serve);
 exports.clear = clear;

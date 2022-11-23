@@ -17,23 +17,23 @@
             <nav class="nav">
                 <a class="nav__logo" href="#" target="_blank"><img class="nav__logo-pic" src="icons/YourTour.svg" alt="YourTour"></a>
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link p-normal" href="#" target="_blank">Туры</a></li>
-                    <li class="nav__item"><a class="nav__link p-normal" href="#" target="_blank">Создать тур</a></li>
-                    <li class="nav__item"><a class="nav__link p-normal" href="#" target="_blank">Отзывы</a></li>
-                    <li class="nav__item"><a class="nav__link p-normal" href="#" target="_blank">Истории</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#" target="_blank">Туры</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#" target="_blank">Создать тур</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#" target="_blank">Отзывы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#" target="_blank">Истории</a></li>
                 </ul>
-                <a class="nav__phone p-normal" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+                <a class="nav__phone" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
             </nav>
         </div>
         <div class="header__content container">
             <h1 class="header__title">Идеальные путешествия существуют</h1>
-            <p class="header__desc p-normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            <button class="header__button btn-small p-small">Найти тур</button>
+            <p class="header__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <button class="header__button btn-small">Найти тур</button>
         </div>
     </header>
 
     <section class="choose-your-tour container">
-        <div class="section__text">
+        <div class="section__top">
             <h2 class="choose-your-tour__title">Выбери свой тур</h2>
             <ul class="choose-your-tour__tabs">
                 <li class="tab tab_active">Популярные</li>
@@ -48,7 +48,7 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-1.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
@@ -56,7 +56,7 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-2.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
@@ -64,7 +64,7 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-3.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
@@ -72,7 +72,7 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-4.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
@@ -80,7 +80,7 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-5.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
@@ -88,11 +88,63 @@
                 <img class="tour-card__image" src="img/choose-your-tour/card tour photo-6.jpg" alt="Путешествие в горы">
                 <div class="tour-card__content">
                     <h3 class="tour-card__title">Путешествие в горы</h3>
-                    <p class="tour-card__price p-small">от 80 000 руб</p>
+                    <p class="tour-card__price">от 80 000 руб</p>
                     <button class="tour-card__btn btn-more">Подробнее</button>
                 </div>
             </li>
         </ul>
     </section>
+    <section class="build-your-tour container">
+        <div class="section__top">
+            <h2 class="build-your-tour__title">Собери свой тур</h2>
+            <div class="build-your-tour__text section__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
+        </div>
+        <form action="#" class="form">
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="name" class="form__label">Введите Ваше имя</label>
+                    <input type="text" class="form__input" id="name" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form__field dropdow">
+                    <label for="direction" class="form__label">Направление</label>
+                    <div class="form__wrapper">
+                        <input type="text" class="form__input dropdown__input" id="direction" placeholder="Куда хотите ехать" tabindex="1">
+                        <ul class="dropdown__content">
+                            <li class="dropdown__item">Аляска</li>
+                            <li class="dropdown__item">Аргентина</li>
+                            <li class="dropdown__item">Новая зеландия</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="text" class="form__input" id="email" placeholder="example@mail.com">
+                </div>
+                <div class="form__field">
+                    <label for="phone" class="form__label">Телефон</label>
+                    <input type="text" class="form__input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="date-from" class="form__label">Дата от</label>
+                    <input type="text" class="form__input" id="date-from" placeholder="ДД.ММ.ГГГГ">
+                </div>
+                <div class="form__field">
+                    <label for="date-to" class="form__label">Дата до</label>
+                    <input type="text" class="form__input" id="date-to" placeholder="ДД.ММ.ГГГГ">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="comment" class="form__label">Комментарий</label>
+                    <textarea name="comment" id="comment" class="form__input"></textarea>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="index.js" defer></script>
 </body>
 </html>
