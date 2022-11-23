@@ -5,10 +5,10 @@ const input = document.getElementsByClassName('dropdown__input').item(0);
 const dropdownWrapper = input.nextElementSibling;
 let dropdownContent = Array.from(dropdownWrapper.childNodes);
 
-console.log(input);
 const initCitySelection = () => {
     dropdownContent.forEach(element => {
         element.addEventListener('click', ({ target }) => {
+            console.log(currentCity);
             currentCity = target.textContent;
             input.value = currentCity;
         })
@@ -29,6 +29,9 @@ const initCitySearch = () => {
     });
 }
 
+initCitySelection();
+initCitySearch();
+
 input.addEventListener('blur', e => {
     setTimeout(() => {
         dropdownContent.forEach(select => {
@@ -42,6 +45,3 @@ input.addEventListener('focus', e => {
         select.classList.remove('hidden');
     });
 });
-
-initCitySelection();
-initCitySearch();

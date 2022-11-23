@@ -26,7 +26,6 @@
 @mixin input {
     @include pNormal;
     width: 100%;
-    margin-top: 8px;
     padding: 20px;
     background: $color-beige-100;
     border: 1px solid $color-beige-200;
@@ -54,6 +53,9 @@
 
 .form__label {
     @include pNormal;
+    width: 100%;
+    margin-bottom: 8px;
+    display: block;
 }
 
 
@@ -64,17 +66,18 @@
 }
 
 .dropdown__content {
-    // z-index: -1;
     z-index: 1;
     position: absolute;
     left: 0;
     right: 0;
     opacity: 0;
     height: 0;
-    // display: none;
+    overflow: hidden;
+    overflow-y: visible;
     padding: 12px;
     background: $color-white;
     box-shadow: 8px 8px 24px $color-gray-200;
+    transition: all .25s ease-out;
 }
 
 .dropdown__item {
@@ -109,9 +112,112 @@
 
 .dropdown__input {
     &:focus + .dropdown__content {
-        // display: block;
-        // z-index: 1;
-        height: auto;
+        opacity: 1;
+        height: 300px;
+    }
+}
+
+
+/* Radio */
+
+.radio {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    cursor: pointer;
+
+    @include media-mobile {
+        column-gap: 10px;
+    }
+}
+
+.radio__input {
+    display: none;
+
+    &:checked + .radio__fake::after {
         opacity: 1;
     }
+}
+
+.fake__control {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 26px;
+
+    @include media-mobile {
+        width: 20px;
+        height: 20px;
+    }
+
+    &::after {
+        content: '';
+    }
+}
+
+.radio__fake {
+    border-radius: 50px;
+    border: 2px solid $color-black;
+
+    &::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        background: $color-black;
+        border-radius: 50px;
+        opacity: 0;
+
+        @include media-mobile {
+            width: 9.23px;
+            height: 9.23px;
+        }
+    }
+}
+
+.radio__label {
+    @include pNormal;
+}
+
+
+/* Checkbox */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    cursor: pointer;
+    
+    @include media-mobile {
+        column-gap: 10px;
+        align-items: start;
+    }
+}
+
+.checkbox__input {
+    display: none;
+    
+    &:checked + .checkbox__fake::after {
+        content: url(../../icons/checkbox-checked.svg);
+
+        @include media-mobile {
+            content: url(../../icons/checkbox-checked-mb.svg);
+        }
+    }
+}
+
+.checkbox__fake {
+    &::after {
+        content: url(../../icons/checkbox.svg);
+
+        @include media-mobile {
+            content: url(../../icons/checkbox-mb.svg);
+        }
+    }
+}
+
+.checkbox__label {
+    @include pSmall;
 }
