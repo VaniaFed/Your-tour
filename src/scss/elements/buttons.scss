@@ -42,8 +42,14 @@ button {
         background: $color-green-200;
     }
 
+    @include media-tablet {
+        padding: 12px 29.5px;
+        width: 100%;
+    }
+
     @include media-mobile {
         padding: 12px 29.5px;
+        width: 100%;
     }
 
     &_secondary {
