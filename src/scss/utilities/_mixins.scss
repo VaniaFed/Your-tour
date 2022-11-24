@@ -1,4 +1,9 @@
+@mixin Roboto {
+    font-family: Roboto, Arial, sans-serif; 
+}
+
 @mixin h1 {
+    @include Roboto;
     font-size: 96px;
     font-weight: 700;
     line-height: 104.64px;
@@ -11,6 +16,7 @@
 }
 
 @mixin h2 {
+    @include Roboto;
     font-size: 59px;
     font-weight: 700;
     line-height: 73.16px;
@@ -22,6 +28,7 @@
 }
 
 @mixin h3 {
+    @include Roboto;
     font-size: 35px;
     font-weight: 500;
     line-height: 42.7px;
@@ -34,6 +41,7 @@
 }
 
 @mixin pBig {
+    @include Roboto;
     font-size: 23px;
     font-weight: 700;
     line-height: 28.06px;
@@ -45,6 +53,7 @@
 }
 
 @mixin pNormal {
+    @include Roboto;
     font-size: 20px;
     font-weight: 400;
     line-height: 28.4px;
@@ -56,6 +65,7 @@
 }
 
 @mixin pSmall {
+    @include Roboto;
     font-size: 17px;
     font-weight: 400;
     line-height: 24.14px;

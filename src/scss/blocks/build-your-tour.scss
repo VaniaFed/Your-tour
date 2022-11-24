@@ -2,16 +2,34 @@
 @import '../utilities/media';
 @import '../utilities/mixins';
 
+
+.build-your-tour__top {
+    @include media-mobile {
+        padding-bottom: 40px !important;
+    }
+}
+
 .build-your-tour__text {
-    width: 418px;
+    width: 400px;
     margin: 0 auto;
 }
 
 .form__radio {
     display: flex;
     column-gap: 31px;
+
+    @include media-mobile {
+        column-gap: 30px;
+    }
 }
 
 .checkbox__gray {
     color: $color-gray-300;
+}
+
+.form__row.btn__row {
+    @include media-mobile {
+        flex-direction: row;
+        column-gap: 10px;
+    }
 }

@@ -26,7 +26,38 @@ button {
 }
 
 .btn-large {
+    @include pNormal;
+    padding: 15px 70.5px;
+    border: none;
+    background: $color-green-400;
+    color: $color-white;
+    border-radius: 10px;
+    cursor: pointer;
 
+    &:hover {
+        background: $color-green-300;
+    }
+
+    &:active {
+        background: $color-green-200;
+    }
+
+    @include media-mobile {
+        padding: 12px 29.5px;
+    }
+
+    &_secondary {
+        background: $color-green-100;
+        color: $color-green-400;
+
+        &:hover {
+            background: $color-gray-100;
+        }
+
+        &:active {
+            background: $color-gray-200;
+        }
+    }
 }
 
 .btn-more {
