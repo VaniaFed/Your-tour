@@ -23,6 +23,7 @@
 
     @include media-mobile {
         font-size: 34px;
+        letter-spacing: 0.02em;
         line-height: 38.08px;
     }
 }
@@ -35,6 +36,8 @@
 
     @include media-mobile {
         font-size: 23px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
         line-height: 27.6px;
         letter-spacing: 0.04em;
     }

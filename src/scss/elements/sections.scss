@@ -11,6 +11,9 @@ section {
 }
 
 .section__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding-bottom: 100px;
     
@@ -21,10 +24,11 @@ section {
 
 .section__text {
     @include pNormal;
-    margin-top: 30px !important;
+    margin-top: 30px;
     color: $color-gray-300;
 
     @include media-mobile {
         width: 100%;
+        margin-top: 20px;
     }
 }

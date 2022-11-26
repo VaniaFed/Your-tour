@@ -18,12 +18,17 @@
     padding: 30px 0;
     max-width: 1168px;
 
+    @include media-laptop {
+        max-width: 918px;
+    }
+
     @include media-tablet {
         flex-direction: column;
     }
 
     @include media-mobile {
         flex-direction: column;
+        padding: 21px;
     }
 }
 

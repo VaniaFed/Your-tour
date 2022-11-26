@@ -17,6 +17,7 @@
 
     @include media-mobile {
         padding: 20px;
+        padding-bottom: 40px;
         border-radius: 30px;
     }
 }
@@ -28,6 +29,10 @@
 
     @include media-laptop {
         column-gap: 20px;
+
+        &.btn__row {
+            column-gap: 30px;
+        }
     }
 
     @include media-mobile {
@@ -50,6 +55,7 @@
 @mixin input {
     @include pNormal;
     width: 100%;
+    height: 68px;
     padding: 20px;
     background: $color-beige-100;
     border: 1px solid $color-beige-200;
@@ -69,6 +75,10 @@
         color: $color-gray-300;
     }
 
+    @include media-mobile {
+        height: 43px;
+        padding: 10px;
+    }
 }
 
 .form__input {
@@ -76,8 +86,14 @@
 }
 
 .form__textarea {
+    display: flex;
+    flex-direction: column;
     min-height: 152px;
     resize: none;
+
+    @include media-mobile {
+        min-height: 132px;
+    }
 }
 
 .form__label {
@@ -135,6 +151,10 @@
         align-items: center;
         background: url('icons/ic-dropdown.svg');
         pointer-events: none;
+
+        @include media-mobile {
+            right: 10px;
+        }
     }
 }
 
@@ -208,9 +228,13 @@
 .checkbox {
     display: flex;
     align-items: center;
-    column-gap: 11px;
+    column-gap: 19px;
     cursor: pointer;
     
+    @include media-laptop {
+        column-gap: 11px;        
+    }
+
     @include media-mobile {
         column-gap: 10px;
         align-items: start;

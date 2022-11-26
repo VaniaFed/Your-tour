@@ -1,3 +1,7 @@
+// TODO:
+// 1. pixel perfect
+// 2. header mobile bg pic
+
 'use sctict';
 
 let currentCity = null;
@@ -33,23 +37,20 @@ const initCitySearch = () => {
 initCitySelection();
 initCitySearch();
 
-input.addEventListener('blur', e => {
+input.addEventListener('blur', () => {
     setTimeout(() => {
         dropdownWrapper.classList.add('hidden');
     }, 100);
 });
 
-input.addEventListener('focus', e => {
+input.addEventListener('focus', () => {
     dropdownWrapper.classList.remove('hidden');
 });
-
-
-//
 
 const headerTop = document.querySelector('.header__top');
 const body = document.querySelector('body');
 
-document.addEventListener('scroll', e => {
+document.addEventListener('scroll', () => {
     const positionXToMakeHeaderFixed = 450;
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
@@ -59,5 +60,4 @@ document.addEventListener('scroll', e => {
         headerTop.classList.remove('header__fixed');
         body.classList.remove('body_header-fixed');
     }
-
-})
+});

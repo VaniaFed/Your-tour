@@ -25,6 +25,7 @@
     border-radius: 50px;
 
     @include media-mobile {
+        height: 455px;
         padding: 30px;
         border-radius: 20px;
     }
@@ -52,6 +53,10 @@
 
 .storie-card__top {
     min-height: 394px;
+
+    @include media-mobile {
+        min-height: 0;
+    }
 }
 
 .storie-card__image {

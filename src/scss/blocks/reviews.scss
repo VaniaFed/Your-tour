@@ -9,6 +9,10 @@
     @include media-tablet {
         @include h3;        
     }
+
+    @include media-mobile {
+        @include h2;
+    }
 }
 
 .reviews__list {
@@ -34,6 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     padding: 40px;
     border-radius: 50px;
     background: $color-beige-200;
@@ -46,18 +51,22 @@
 
 .review-card__text {
     @include pBig;
-    margin-top: 40px;
+    margin-top: 28px;
 
     &:first-child {
         margin-top: 0;
     }
 }
 
+.user__right {
+    display: flex;
+}
+
 .review-card__user {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 69px;
 
     @include media-mobile {
         margin-top: 40px;

@@ -2,15 +2,14 @@
 @import '../utilities/media';
 @import '../utilities/mixins';
 
-.build-your-tour__top {
+.section__top.build-your-tour__top {
     @include media-mobile {
-        padding-bottom: 40px !important;
+        padding-bottom: 40px;
     }
 }
 
-.build-your-tour__text {
-    width: 400px;
-    margin: 0 auto;
+.build-your-tour__text.section__text {
+    width: 420px;
 
     @include media-tablet {
         width: 100%;
