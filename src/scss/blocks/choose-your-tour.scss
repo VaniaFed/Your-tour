@@ -38,9 +38,12 @@
         grid-gap: 18px;
     }
 
+    @include media-tablet {
+        grid-template-columns: 1fr;
+    }
+
     @include media-mobile {
         grid-template-columns: 1fr;
-        grid-gap: 18px;
     }
 }
 

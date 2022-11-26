@@ -12,7 +12,9 @@
     }
 
     @include media-tablet {
-        padding: 40px;
+        padding: 20px;
+        padding-bottom: 40px;
+        border-radius: 30px;
     }
 
     @include media-mobile {
@@ -33,6 +35,13 @@
         &.btn__row {
             column-gap: 30px;
         }
+    }
+
+    @include media-tablet {
+        margin-top: 30px;
+
+        flex-direction: column;
+        row-gap: 30px;
     }
 
     @include media-mobile {
