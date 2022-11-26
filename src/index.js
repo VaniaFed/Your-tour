@@ -6,11 +6,12 @@ const dropdownWrapper = input.nextElementSibling;
 let dropdownContent = Array.from(dropdownWrapper.childNodes);
 
 const initCitySelection = () => {
-    dropdownContent.forEach(element => {
-        element.addEventListener('click', ({ target }) => {
+    dropdownContent.forEach(select => {
+        select.addEventListener('click', ({ target }) => {
             console.log(currentCity);
             currentCity = target.textContent;
             input.value = currentCity;
+            dropdownWrapper.classList.add('hidden');
         })
     });
 }
@@ -34,14 +35,10 @@ initCitySearch();
 
 input.addEventListener('blur', e => {
     setTimeout(() => {
-        dropdownContent.forEach(select => {
-            select.classList.add('hidden');
-        });
+        dropdownWrapper.classList.add('hidden');
     }, 100);
 });
 
 input.addEventListener('focus', e => {
-    dropdownContent.forEach(select => {
-        select.classList.remove('hidden');
-    });
+    dropdownWrapper.classList.remove('hidden');
 });

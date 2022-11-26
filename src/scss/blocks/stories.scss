@@ -1,0 +1,109 @@
+@import '../utilities/variables';
+@import '../utilities/media';
+@import '../utilities/mixins';
+
+.stories__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    @include media-mobile {
+        row-gap: 20px;
+    }
+}
+
+.storie-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 567px;
+    padding: 60px;
+    color: $color-white;
+    border-radius: 50px;
+
+    @include media-mobile {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    &:hover .storie-card__image {
+        transform: scale(1.2);
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+    }
+}
+
+.storie-card__top {
+    min-height: 394px;
+}
+
+.storie-card__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms ease;
+}
+
+.storie-card__title {
+    color: $color-white;
+}
+
+.storie-card__desc {
+    margin-top: 37px;
+    max-width: 554px;
+    @include pNormal;
+
+    @include media-mobile {
+        margin-top: 20px;
+        max-width: none;
+    }
+}
+
+.storie-card__advantages {
+    margin-top: 25px;
+    padding-left: 30px;
+    list-style-type: disc;
+}
+
+.storie-card__advantage {
+    margin-top: 6px;
+}
+
+.storie-card__bottom {
+    position: relative;
+    bottom: -7px;
+    left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social-media-links {
+    position: relative;
+    right: -20px;
+    display: flex;
+    column-gap: 35px;
+
+    @include media-mobile {
+        display: none;
+    }
+}

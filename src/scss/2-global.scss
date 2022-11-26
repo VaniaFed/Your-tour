@@ -12,6 +12,10 @@ body {
     color: $color-black;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     max-width: $container-width-desktop;
 
@@ -29,6 +33,11 @@ body {
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
+    height: 0;
+}
+
+.gray {
+    color: $color-gray-300;
 }
 

@@ -75,6 +75,11 @@
     @include input;
 }
 
+.form__textarea {
+    min-height: 152px;
+    resize: none;
+}
+
 .form__label {
     @include pNormal;
     width: 100%;
@@ -94,8 +99,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    opacity: 0;
-    height: 0;
     overflow: hidden;
     overflow-y: visible;
     padding: 12px;
@@ -131,13 +134,6 @@
         align-items: center;
         background: url('icons/ic-dropdown.svg');
         pointer-events: none;
-    }
-}
-
-.dropdown__input {
-    &:focus + .dropdown__content {
-        opacity: 1;
-        height: 300px;
     }
 }
 

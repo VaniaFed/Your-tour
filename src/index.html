@@ -109,7 +109,7 @@
                     <label for="direction" class="form__label">Направление</label>
                     <div class="form__wrapper">
                         <input type="text" class="form__input dropdown__input" id="direction" placeholder="Куда хотите ехать" tabindex="1">
-                        <ul class="dropdown__content">
+                        <ul class="dropdown__content hidden">
                             <li class="dropdown__item">Аляска</li>
                             <li class="dropdown__item">Аргентина</li>
                             <li class="dropdown__item">Новая зеландия</li>
@@ -148,7 +148,7 @@
             <div class="form__row">
                 <div class="form__field">
                     <label for="comment" class="form__label">Комментарий</label>
-                    <textarea name="comment" id="comment" class="form__input"></textarea>
+                    <textarea name="comment" id="comment" class="form__input form__textarea"></textarea>
                 </div>
             </div>
             <div class="form__row">
@@ -174,14 +174,14 @@
                         <label class="checkbox">
                             <input type="checkbox" name="license_agreement" class="checkbox__input">
                             <span class="checkbox__fake fake__control"></span>
-                            <span class="checkbox__label"><span class="checkbox__gray">Нажимая кнопку, я принимаю условия</span> Лицензионного договора</span>
+                            <span class="checkbox__label"><span class="gray">Нажимая кнопку, я принимаю условия</span> Лицензионного договора</span>
                         </label>
                     </div>
                 </div>
             </div>
             <div class="form__row btn__row">
                 <button class="btn-large">Найти тур</button>
-                <button class="btn-large btn-large_secondary">Найти тур</button>
+                <button class="btn-large btn-large_secondary">Сбросить</button>
             </div>
         </form>
     </section>
@@ -221,8 +221,125 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <section class="photos">
+        <div class="section__top">
+            <h2 class="reviews__title">Фотографии путешествий</h2>
+            <div class="build-your-tour__text section__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
+        </div>
+        <div class="photos__gallery">
+            <div class="gallery__row">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-1.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-2.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-3.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-4.png" alt="aaa">
+            </div>
+            <div class="gallery__row-special">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-5.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-6.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-7.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-8.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-9.png" alt="aaa">
+            </div>
+            <div class="gallery__row">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-10.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-11.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-12.png" alt="aaa">
+                <img class="photos__image" src="img/Traveler's Photos/travel photo-13.png" alt="aaa">
+            </div>
+        </div>
+    </section>
+    <section class="stories container">
+        <div class="section__top">
+            <h2>Истории путешествий</h2>
+            <div class="build-your-tour__text section__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
+        </div>
+
+        <div class="stories__list">
+            <div class="storie-card">
+                <img src="img/Traveler's Stories/story photo-1.jpg" alt="Автостопом в Стамбул" class="storie-card__image">
+                <div class="storie-card__top">
+                    <h3 class="storie-card__title">Автостопом в Стамбул</h3>
+                    <p class="storie-card__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                    <ul class="storie-card__advantages">
+                        <li class="storie-card__advantage">вкусная еда</li>
+                        <li class="storie-card__advantage">дешевый транспорт</li>
+                        <li class="storie-card__advantage">красивый город.</li>
+                    </ul>
+                </div>
+                <div class="storie-card__bottom">
+                    <button class="btn-more storie-card__btn">Подробнее</button>
+                    <ul class="social-media-links">
+                        <li>
+                            <a class="social-media-link link" href="#">instagram</a>
+                        </li>
+                        <li>
+                            <a class="social-media-link link" href="#">facebook</a>
+                        </li>
+                        <li>
+                            <a class="social-media-link link" href="#">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="storie-card">
+                <img src="img/Traveler's Stories/story photo-2.jpg" alt="Автостопом в Стамбул" class="storie-card__image">
+                <div class="storie-card__top">
+                    <h3 class="storie-card__title">Автостопом в Стамбул</h3>
+                    <p class="storie-card__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                </div>
+                <div class="storie-card__bottom">
+                    <button class="btn-more storie-card__btn">Подробнее</button>
+                    <ul class="social-media-links">
+                        <li>
+                            <a class="social-media-link link" href="#">instagram</a>
+                        </li>
+                        <li>
+                            <a class="social-media-link link" href="#">ВКонтакте</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="storie-card">
+                <img src="img/Traveler's Stories/story photo-3.jpg" alt="Автостопом в Стамбул" class="storie-card__image">
+                <div class="storie-card__top">
+                    <h3 class="storie-card__title">Автостопом в Стамбул</h3>
+                    <p class="storie-card__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                </div>
+                <div class="storie-card__bottom">
+                    <button class="btn-more storie-card__btn">Подробнее</button>
+                    <ul class="social-media-links">
+                        <li>
+                            <a class="social-media-link link" href="#">instagram</a>
+                        </li>
+                        <li>
+                            <a class="social-media-link link" href="#">facebook</a>
+                        </li>
+                        <li>
+                            <a class="social-media-link link" href="#">ВКонтакте</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta container">
+        <img src="img/Travel with us/footer photo.jpg" alt="Travel With us" class="cta__image">
+        <div class="cta__right">
+            <h3 class="cta__title">Пора в путешествие вместе с нами!</h3>
+            <p class="cta__text"><span class="gray">Напиши на почту и узнай подробности на</span> <a href="#" target="_blank" class=" cta__link link">yourtour@gmail.com</a></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text gray">Наши социальные сети</p>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/inst.svg" alt="instagram" class="link__icon"><span class="footer__link-text">Instagram</span></a></li>
+                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/fb.svg" alt="fb" class="link__icon"><span class="footer__link-text">facebook</span></a></li>
+                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/vk.svg" alt="vk" class="link__icon"><span class="footer__link-text">vkontakte</span></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="index.js" defer></script>
 </body>
 </html>

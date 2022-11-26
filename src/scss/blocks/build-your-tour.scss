@@ -2,7 +2,6 @@
 @import '../utilities/media';
 @import '../utilities/mixins';
 
-
 .build-your-tour__top {
     @include media-mobile {
         padding-bottom: 40px !important;
@@ -12,6 +11,14 @@
 .build-your-tour__text {
     width: 400px;
     margin: 0 auto;
+
+    @include media-tablet {
+        width: 100%;
+    }
+
+    @include media-mobile {
+        width: 100%;
+    }
 }
 
 .form__radio {
@@ -21,10 +28,6 @@
     @include media-mobile {
         column-gap: 30px;
     }
-}
-
-.checkbox__gray {
-    color: $color-gray-300;
 }
 
 .form__row.btn__row {
