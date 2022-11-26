@@ -42,3 +42,19 @@ input.addEventListener('blur', e => {
 input.addEventListener('focus', e => {
     dropdownWrapper.classList.remove('hidden');
 });
+
+
+//
+
+const headerTop = document.querySelector('.header__top');
+
+document.addEventListener('scroll', e => {
+    const positionXToMakeHeaderFixed = 450;
+    const y = window.scrollY;
+    if (y > positionXToMakeHeaderFixed) {
+        headerTop.classList.add('header__fixed');
+    } else {
+        headerTop.classList.remove('header__fixed');
+    }
+
+})
