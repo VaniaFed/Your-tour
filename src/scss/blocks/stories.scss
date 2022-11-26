@@ -29,6 +29,10 @@
         border-radius: 20px;
     }
 
+    &:hover .btn-more {
+        background: $color-green-400;
+    }
+
     &:hover .storie-card__image {
         transform: scale(1.2);
     }

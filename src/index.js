@@ -47,14 +47,17 @@ input.addEventListener('focus', e => {
 //
 
 const headerTop = document.querySelector('.header__top');
+const body = document.querySelector('body');
 
 document.addEventListener('scroll', e => {
     const positionXToMakeHeaderFixed = 450;
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
         headerTop.classList.add('header__fixed');
+        body.classList.add('body_header-fixed');
     } else {
         headerTop.classList.remove('header__fixed');
+        body.classList.remove('body_header-fixed');
     }
 
 })

@@ -62,12 +62,16 @@
         background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
     }
 
-    @include media-mobile {
-        border-radius: 20px;
+    &:hover .btn-more {
+        background: $color-green-400;
     }
 
     &:hover .tour-card__image {
         transform: scale(1.2);
+    }
+
+    @include media-mobile {
+        border-radius: 20px;
     }
 }
 
