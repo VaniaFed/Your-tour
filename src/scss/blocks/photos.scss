@@ -118,6 +118,16 @@
     }
 }
 
+@include media-tablet {
+    .img-2,
+    .img-3,
+    .img-6,
+    .img-12,
+    .img-13 {
+        display: none;
+    }
+}
+
 @include media-mobile {
     .img-2,
     .img-3,

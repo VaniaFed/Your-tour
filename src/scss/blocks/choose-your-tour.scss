@@ -47,8 +47,8 @@
 .tour-card {
     position: relative;
     display: flex;
-    border-radius: 50px;
     overflow: hidden;
+    border-radius: 50px;
 
     &::before {
         content: '';
