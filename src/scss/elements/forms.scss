@@ -80,14 +80,29 @@
         outline: none;
     }
 
-    &::placeholder {
+    &::placeholder,
+    &::-webkit-datetime-edit {
         color: $color-gray-300;
+    }
+
+    &::-webkit-datetime-edit {
+        text-transform: uppercase;
+    }
+
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-inner-spin-button {
+            display: none;
+            -webkit-appearance: none;
     }
 
     @include media-mobile {
         height: 43px;
         padding: 10px;
     }
+
+    // &:invalid:not(:placeholder-shown) {
+    //     border: 1px solid $color-red !important;
+    // }
 }
 
 .form__input {
@@ -254,24 +269,37 @@
     display: none;
     
     &:checked + .checkbox__fake::after {
-        content: url(../../icons/checkbox-checked.svg);
+        content: url(icons/checkbox-checked.svg);
 
         @include media-mobile {
-            content: url(../../icons/checkbox-checked-mb.svg);
+            content: url(icons/checkbox-checked-mb.svg);
         }
     }
 }
 
 .checkbox__fake {
     &::after {
-        content: url(../../icons/checkbox.svg);
+        content: url(icons/checkbox.svg);
 
         @include media-mobile {
-            content: url(../../icons/checkbox-mb.svg);
+            content: url(icons/checkbox-mb.svg);
         }
     }
 }
 
 .checkbox__label {
     @include pSmall;
+}
+
+.checkbox__link.link.link_black {
+    display: inline-block;
+    font-size: 17px;
+
+    &:active {
+        color: $color-green-400;
+    }
+
+    &:active::after {
+        background: $color-green-400;
+    }
 }

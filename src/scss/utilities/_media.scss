@@ -10,8 +10,14 @@
     }
 }
 
+@mixin media-mobile-xl {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
 @mixin media-mobile {
-    @media (max-width: 360px) {
+    @media (max-width: 450px) {
         @content;
     }
 }

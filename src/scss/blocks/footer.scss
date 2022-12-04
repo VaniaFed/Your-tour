@@ -15,11 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
-    max-width: 1168px;
+    padding: 30px 20px;
 
     @include media-laptop {
-        max-width: 918px;
+        max-width: 958px;
     }
 
     @include media-tablet {
@@ -45,26 +44,44 @@
         margin-top: 7px;
     }
 
+    @include media-mobile-xl {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     @include media-mobile {
         column-gap: 15px;
         margin-top: 7px;
     }
 }
 
-.link.footer__link {
-    display: flex;
-    align-items: center;
-    color: $color-black;
-}
+
+// TODO: проверить пиксел перфект и если надо, внести правки
+
+// TODO: загрузить репозиторий обновить сайт
+
+// TODO: отписать и предупредить про пункт с картинками
 
 .link__icon {
+    display: inline-block;
     width: 26px;
 
     @include media-mobile {
         width: 20px;
+        height: 20px;
     }
 }
 
 .footer__link-text {
     margin-left: 10px;
+
+    @include media-mobile-xl {
+        margin-left: 5px;
+    }
+}
+
+.link__icon,
+.footer__link-text {
+    display: inline-block;
+    vertical-align: middle;
 }

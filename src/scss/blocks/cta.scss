@@ -10,9 +10,9 @@
 
 .cta {
     display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: 30px;
-    width: 771px;
 
     @include media-small-notebook {
         flex-direction: column;
@@ -20,14 +20,6 @@
     }
 
     @include media-tablet {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    @include media-mobile {
-        flex-direction: column;
-        width: 100%;
         text-align: center;
     }
 }
@@ -65,8 +57,24 @@
 .cta__text {
     @include pNormal;
     margin-top: 20px;
+
+    @include media-mobile {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
-.link.cta__link {
-    color: $color-black;
+.cta__link {
+    display: inline-block;
+    &:active {
+        color: $color-green-400;
+    }
+    &:active::after {
+        background-color: $color-green-400;
+    }
+}
+
+.cta__right {
+    max-width: 371px;
 }

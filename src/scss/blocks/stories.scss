@@ -25,6 +25,7 @@
     border-radius: 50px;
 
     @include media-tablet {
+        height: auto;
         padding: 30px;
         border-radius: 20px;
     }
@@ -57,14 +58,12 @@
 }
 
 .storie-card__top {
-    min-height: 394px;
-
     @include media-tablet {
-        min-height: 0;
+        padding-bottom: 40px;
     }
 
     @include media-mobile {
-        min-height: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -101,13 +100,10 @@
 }
 
 .storie-card__advantages {
+    @include pNormal;
     margin-top: 25px;
     padding-left: 30px;
     list-style-type: disc;
-}
-
-.storie-card__advantage {
-    margin-top: 6px;
 }
 
 .storie-card__bottom {

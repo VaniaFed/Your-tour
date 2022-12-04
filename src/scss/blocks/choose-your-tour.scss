@@ -15,16 +15,11 @@
     justify-content: center;
     column-gap: 30px;
     row-gap: 10px;
+    flex-wrap: wrap;
     min-height: 34px;
 
     @include media-tablet {
         column-gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    @include media-mobile {
-        column-gap: 10px;
-        flex-wrap: wrap;
     }
 }
 
@@ -94,11 +89,11 @@
 
 .tour-card__image {
     width: 100%;
+    object-fit: cover;
     transition: transform 300ms ease;
 
     @include media-laptop {
         height: 531px;
-        object-fit: cover;
     }
 
     @include media-mobile {

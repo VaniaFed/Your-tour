@@ -2,11 +2,12 @@
 @import '../utilities/media';
 @import '../utilities/mixins';
 
-section {
-    padding-top: 135px !important;
+section,
+section.container {
+    padding-top: 135px;
 
     @include media-mobile {
-        padding-top: 75px !important;
+        padding-top: 75px;
     }
 }
 

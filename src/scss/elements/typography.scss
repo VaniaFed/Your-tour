@@ -13,6 +13,7 @@ h3,
 .p-normal,
 .p-small {
     color: $color-black;
+    word-wrap: break-word;
 }
 
 h1 {
@@ -37,4 +38,36 @@ h3 {
 
 .p-small {
     @include pSmall;
+}
+
+
+.link {
+    @include pNormal;
+    color: $color-white;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
+
+    &:hover::after {
+        background: $color-white;
+    }
+
+    &_social,
+    &_social.link_black {
+        &:active {
+            color: $color-orange-200;
+        }
+
+        &:active::after {
+            background: $color-orange-200;
+        }
+    }
+
+    &_black {
+        @include link_black;
+    }
 }

@@ -7,11 +7,7 @@
     margin: 0 auto;
 
     @include media-tablet {
-        @include h3;        
-    }
-
-    @include media-mobile {
-        @include h2;
+        width: 100%;
     }
 }
 

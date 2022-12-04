@@ -17,11 +17,12 @@ img {
 }
 
 .container {
-    max-width: $container-width-desktop;
+    max-width: calc($container-width-desktop + 20px * 2);
+    padding: 0 20px;
     margin: 0 auto;
 
     @include media-laptop {
-        max-width: $container-width-laptop;
+        max-width: calc($container-width-laptop + 20px * 2);
     }
 
     @include media-tablet {
@@ -33,7 +34,6 @@ img {
         max-width: none;
         padding: 0 21px;
     }
-
 }
 
 .hidden {
@@ -48,4 +48,3 @@ img {
 .gray {
     color: $color-gray-300;
 }
-

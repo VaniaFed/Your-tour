@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Идеальные путешествия существуют">
     <meta name="keywords" content="Путешествия, поездки, тур, отпуск, праздники, каникулы">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,9 +16,8 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <nav class="nav">
+        <div class="header__top">
+                <nav class="nav container">
                     <a class="nav__logo" href="#" target="_blank">
                         <svg class="nav__logo-pic" width="182" height="32" viewBox="0 0 182 32" fill="white" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.476 0.879883L13.902 14.0679L20.412 0.879883H27.93L17.304 20.5359V30.6999H10.458V20.4519L0 0.879883H7.476Z" />
@@ -31,16 +31,15 @@
                         </svg>
                     </a>
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#" target="_blank">Туры</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#" target="_blank">Создать тур</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#" target="_blank">Отзывы</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#" target="_blank">Истории</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#" target="_blank">Туры</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#" target="_blank">Создать тур</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#" target="_blank">Отзывы</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#" target="_blank">Истории</a></li>
                     </ul>
-                    <a class="nav__phone" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+                    <a class="nav__phone link" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
                 </nav>
-            </div>
         </div>
-        <div class="header__content">
+        <div class="header__content container">
             <h1 class="header__title">Идеальные путешествия существуют</h1>
             <p class="header__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <button class="header__button btn-small">Найти тур</button>
@@ -113,16 +112,16 @@
             <h2 class="build-your-tour__title">Собери свой тур</h2>
             <div class="build-your-tour__text section__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
         </div>
-        <form action="#" class="form">
+        <form class="form">
             <div class="form__row">
                 <div class="form__field">
                     <label for="name" class="form__label">Имя</label>
-                    <input type="text" class="form__input" id="name" placeholder="Введите Ваше имя">
+                    <input type="text" required minlength="3" maxlength="30" class="form__input" id="name" placeholder="Введите Ваше имя">
                 </div>
                 <div class="form__field dropdow">
                     <label for="direction" class="form__label">Направление</label>
                     <div class="form__wrapper">
-                        <input type="text" class="form__input dropdown__input" id="direction" placeholder="Куда хотите ехать" tabindex="1">
+                        <input required type="text" class="form__input dropdown__input" id="direction" placeholder="Куда хотите ехать" tabindex="1">
                         <ul class="dropdown__content hidden">
                             <li class="dropdown__item">Аляска</li>
                             <li class="dropdown__item">Аргентина</li>
@@ -142,21 +141,21 @@
             <div class="form__row">
                 <div class="form__field">
                     <label for="email" class="form__label">Email</label>
-                    <input type="text" class="form__input" id="email" placeholder="example@mail.com">
+                    <input type="email" required minlength="6" maxlength="30" class="form__input" id="email" placeholder="example@mail.com">
                 </div>
                 <div class="form__field">
                     <label for="phone" class="form__label">Телефон</label>
-                    <input type="text" class="form__input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                    <input type="tel" required minlength="6" maxlength="12" class="form__input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                 </div>
             </div>
             <div class="form__row">
                 <div class="form__field">
                     <label for="date-from" class="form__label">Дата от</label>
-                    <input type="text" class="form__input" id="date-from" placeholder="ДД.ММ.ГГГГ">
+                    <input type="date" required minlength="8" maxlength="8" class="form__input" id="date-from" placeholder="ДД.ММ.ГГГГ">
                 </div>
                 <div class="form__field">
                     <label for="date-to" class="form__label">Дата до</label>
-                    <input type="text" class="form__input" id="date-to" placeholder="ДД.ММ.ГГГГ">
+                    <input type="date" required minlength="8" maxlength="8" class="form__input" id="date-to" placeholder="ДД.ММ.ГГГГ">
                 </div>
             </div>
             <div class="form__row">
@@ -170,12 +169,12 @@
                     <label class="form__label">Вам есть 18 лет?</label>
                     <div class="form__radio">
                         <label class="radio">
-                            <input type="radio" name="age" class="radio__input">
+                            <input type="radio" required name="age" class="radio__input">
                             <span class="radio__fake fake__control"></span>
                             <span class="radio__label">Да</span>
                         </label>
                         <label class="radio">
-                            <input type="radio" name="age" class="radio__input">
+                            <input type="radio" required name="age" class="radio__input">
                             <span class="radio__fake fake__control"></span>
                             <span class="radio__label">Нет</span>
                         </label>
@@ -186,15 +185,15 @@
                 <div class="form__field">
                     <div class="form__checkbox">
                         <label class="checkbox">
-                            <input type="checkbox" name="license_agreement" class="checkbox__input">
+                            <input type="checkbox" required name="license_agreement" class="checkbox__input">
                             <span class="checkbox__fake fake__control"></span>
-                            <span class="checkbox__label"><span class="gray">Нажимая кнопку, я принимаю условия</span> Лицензионного договора</span>
+                            <span class="checkbox__label"><span class="gray">Нажимая кнопку, я принимаю условия</span> <span class="checkbox__link link link_black">Лицензионного договора</span></span>
                         </label>
                     </div>
                 </div>
             </div>
             <div class="form__row btn__row">
-                <button class="btn-large">Найти тур</button>
+                <input type="submit" class="btn-large" value="Найти тур">
                 <button class="btn-large btn-large_secondary">Сбросить</button>
             </div>
         </form>
@@ -237,7 +236,7 @@
         </div>
     </section>
     <section class="photos">
-        <div class="section__top">
+        <div class="section__top container">
             <h2 class="photos__title">Фотографии путешествий</h2>
             <div class="build-your-tour__text section__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
         </div>
@@ -253,7 +252,7 @@
                 <img class="photos__image img-6" src="img/Traveler's Photos/travel photo-6.png" alt="aaa">
                 <img class="photos__image img-7" src="img/Traveler's Photos/travel photo-7.png" alt="aaa">
                 <img class="photos__image img-8" src="img/Traveler's Photos/travel photo-8.png" alt="aaa">
-                <img class="photos__image img-9" src="img/Traveler's Photos/travel photo-9.png" alt="aaa">
+                <img class="photos__image img-9" src="img/choose-your-tour/card tour photo-4.jpg" alt="aaa">
             </div>
             <div class="gallery__row">
                 <img class="photos__image img-10" src="img/Traveler's Photos/travel photo-10.png" alt="aaa">
@@ -285,13 +284,13 @@
                     <button class="btn-more storie-card__btn">Подробнее</button>
                     <ul class="social-media-links">
                         <li>
-                            <a class="social-media-link link" href="#">instagram</a>
+                            <a class="social-media-link link link_social" href="#">instagram</a>
                         </li>
                         <li>
-                            <a class="social-media-link link" href="#">facebook</a>
+                            <a class="social-media-link link link_social" href="#">facebook</a>
                         </li>
                         <li>
-                            <a class="social-media-link link" href="#">YouTube</a>
+                            <a class="social-media-link link link_social" href="#">YouTube</a>
                         </li>
                     </ul>
                 </div>
@@ -306,10 +305,10 @@
                     <button class="btn-more storie-card__btn">Подробнее</button>
                     <ul class="social-media-links">
                         <li>
-                            <a class="social-media-link link" href="#">instagram</a>
+                            <a class="social-media-link link link_social" href="#">instagram</a>
                         </li>
                         <li>
-                            <a class="social-media-link link" href="#">ВКонтакте</a>
+                            <a class="social-media-link link link_social" href="#">ВКонтакте</a>
                         </li>
                     </ul>
                 </div>
@@ -324,13 +323,13 @@
                     <button class="btn-more storie-card__btn">Подробнее</button>
                     <ul class="social-media-links">
                         <li>
-                            <a class="social-media-link link" href="#">instagram</a>
+                            <a class="social-media-link link link_social" href="#">instagram</a>
                         </li>
                         <li>
-                            <a class="social-media-link link" href="#">facebook</a>
+                            <a class="social-media-link link link_social" href="#">facebook</a>
                         </li>
                         <li>
-                            <a class="social-media-link link" href="#">ВКонтакте</a>
+                            <a class="social-media-link link link_social" href="#">ВКонтакте</a>
                         </li>
                     </ul>
                 </div>
@@ -341,16 +340,16 @@
         <img src="img/Travel with us/footer photo.jpg" alt="Travel With us" class="cta__image">
         <div class="cta__right">
             <h3 class="cta__title">Пора в путешествие вместе с нами!</h3>
-            <p class="cta__text"><span class="gray">Напиши на почту и узнай подробности на</span> <a href="#" target="_blank" class=" cta__link link">yourtour@gmail.com</a></p>
+            <p class="cta__text"><span class="gray">Напиши на почту и узнай подробности на</span> <a href="#" target="_blank" class="link link_black cta__link">yourtour@gmail.com</a></p>
         </div>
     </section>
     <footer class="footer">
         <div class="container footer__container">
             <p class="footer__text gray">Наши социальные сети</p>
             <ul class="footer__links">
-                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/inst.svg" alt="instagram" class="link__icon"><span class="footer__link-text">Instagram</span></a></li>
-                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/fb.svg" alt="fb" class="link__icon"><span class="footer__link-text">facebook</span></a></li>
-                <li><a href="#" class="footer__link link" target="_blank"><img src="icons/vk.svg" alt="vk" class="link__icon"><span class="footer__link-text">vkontakte</span></a></li>
+                <li><a href="#" class="" target="_blank"><img src="icons/inst.svg" alt="instagram" class="link__icon"><span class="footer__link-text link link_social link_black">Instagram</span></a></li>
+                <li><a href="#" class="" target="_blank"><img src="icons/fb.svg" alt="fb" class="link__icon"><span class="footer__link-text link link_social link_black">facebook</span></a></li>
+                <li><a href="#" class="" target="_blank"><img src="icons/vk.svg" alt="vk" class="link__icon"><span class="footer__link-text link link_social link_black">vkontakte</span></a></li>
             </ul>
         </div>
     </footer>

@@ -29,7 +29,7 @@
     }
 }
 
-.form__row.btn__row {
+div.form__row.btn__row {
     @include media-tablet {
         flex-direction: row;
         column-gap: 10px;
