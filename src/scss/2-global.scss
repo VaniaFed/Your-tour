@@ -29,11 +29,6 @@ img {
         max-width: none;
         padding: 0 21px;
     }
-
-    @include media-mobile {
-        max-width: none;
-        padding: 0 21px;
-    }
 }
 
 .hidden {

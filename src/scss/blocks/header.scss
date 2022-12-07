@@ -32,14 +32,11 @@
     background: rgba(#F3EFE8, .6);
     backdrop-filter: blur(10px);
 
-    .nav__link {
-        @include link_black;
-    }
-    
+    .nav__link,
     .nav__phone {
         @include link_black;
     }
-
+    
     .nav__logo-pic {
         fill: $color-black;
     }
@@ -79,6 +76,7 @@
 
 .nav__logo-pic {
     width: 181.84px;
+
     @include media-tablet {
         width: 133px;
     }
@@ -104,15 +102,13 @@
     }
 }
 
-.nav__link {
-    color: $color-white;
-    @include pNormal;
-}
-
+.nav__link,
 .nav__phone {
     @include pNormal;
     color: $color-white;
+}
 
+.nav__phone {
     @include media-mobile {
         font-size: 16px;
         line-height: 22.72px;
@@ -120,18 +116,16 @@
 }
 
 .header__content {
+    max-width: 768px;
     padding-top: 119px;
     padding-bottom: 119px;
-
-    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
 
     @include media-mobile {
-        padding: 52px 20px;
         width: 100%;
+        padding: 52px 20px;
     }
-
-    text-align: center;
-    margin: 0 auto;
 }
 
 .header__title {
@@ -141,14 +135,13 @@
         @include h2;
     }
 
-    @include media-mobile-xl {
+    @include media-mobile {
         @include h1;
     }
 }
 
 .header__desc {
     @include pNormal;
-
     max-width: 562px;
     margin: 0 auto;
     margin-top: 50px;

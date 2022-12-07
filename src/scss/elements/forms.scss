@@ -16,12 +16,6 @@
         padding-bottom: 40px;
         border-radius: 30px;
     }
-
-    @include media-mobile {
-        padding: 20px;
-        padding-bottom: 40px;
-        border-radius: 30px;
-    }
 }
 
 .form__row {
@@ -38,17 +32,9 @@
     }
 
     @include media-tablet {
-        margin-top: 30px;
-
         flex-direction: column;
         row-gap: 30px;
-    }
-
-    @include media-mobile {
         margin-top: 30px;
-
-        flex-direction: column;
-        row-gap: 30px;
     }
 
     &:first-child {
@@ -59,50 +45,6 @@
 .form__field {
     position: relative;
     width: 100%;
-}
-
-@mixin input {
-    @include pNormal;
-    width: 100%;
-    height: 68px;
-    padding: 20px;
-    background: $color-beige-100;
-    border: 1px solid $color-beige-200;
-    border-radius: 10px;
-
-    &:hover {
-        background: $color-beige-200;
-        cursor: pointer;
-    }
-
-    &:focus {
-        border-color: $color-gray-300;
-        outline: none;
-    }
-
-    &::placeholder,
-    &::-webkit-datetime-edit {
-        color: $color-gray-300;
-    }
-
-    &::-webkit-datetime-edit {
-        text-transform: uppercase;
-    }
-
-    &::-webkit-calendar-picker-indicator,
-    &::-webkit-inner-spin-button {
-            display: none;
-            -webkit-appearance: none;
-    }
-
-    @include media-mobile {
-        height: 43px;
-        padding: 10px;
-    }
-
-    // &:invalid:not(:placeholder-shown) {
-    //     border: 1px solid $color-red !important;
-    // }
 }
 
 .form__input {
@@ -122,9 +64,9 @@
 
 .form__label {
     @include pNormal;
+    display: block;
     width: 100%;
     margin-bottom: 8px;
-    display: block;
 }
 
 
@@ -135,14 +77,14 @@
 }
 
 .dropdown__content {
-    z-index: 1;
     position: absolute;
     left: 0;
     right: 0;
-    overflow: hidden;
-    overflow-y: visible;
+    z-index: 1;
     max-height: 300px;
     padding: 12px;
+    overflow: hidden;
+    overflow-y: visible;
     background: $color-white;
     box-shadow: 8px 8px 24px $color-gray-200;
     transition: all .3s ease;
@@ -167,12 +109,12 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-
+        
         display: inline-flex;
-
+        align-items: center;
         width: 24px;
         height: 26px;
-        align-items: center;
+        
         background: url('icons/ic-dropdown.svg');
         pointer-events: none;
 
@@ -221,8 +163,8 @@
 }
 
 .radio__fake {
-    border-radius: 50px;
     border: 2px solid $color-black;
+    border-radius: 50px;
 
     &::after {
         position: absolute;

@@ -26,7 +26,6 @@
     }
 
     @include media-mobile {
-        flex-direction: column;
         padding: 21px;
     }
 }
@@ -44,23 +43,11 @@
         margin-top: 7px;
     }
 
-    @include media-mobile-xl {
+    @include media-mobile {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    @include media-mobile {
-        column-gap: 15px;
-        margin-top: 7px;
-    }
 }
-
-
-// TODO: проверить пиксел перфект и если надо, внести правки
-
-// TODO: загрузить репозиторий обновить сайт
-
-// TODO: отписать и предупредить про пункт с картинками
 
 .link__icon {
     display: inline-block;
@@ -75,7 +62,7 @@
 .footer__link-text {
     margin-left: 10px;
 
-    @include media-mobile-xl {
+    @include media-mobile {
         margin-left: 5px;
     }
 }

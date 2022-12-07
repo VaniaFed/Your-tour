@@ -44,14 +44,6 @@
     @include media-small-notebook {
         margin-top: 30px;
     }
-
-    @include media-tablet {
-        margin-top: 30px;
-    }
-
-    @include media-mobile {
-        margin-top: 30px;
-    }
 }
 
 .cta__text {
@@ -67,9 +59,11 @@
 
 .cta__link {
     display: inline-block;
+
     &:active {
         color: $color-green-400;
     }
+    
     &:active::after {
         background-color: $color-green-400;
     }

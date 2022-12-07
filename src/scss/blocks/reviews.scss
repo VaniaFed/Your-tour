@@ -23,11 +23,6 @@
         flex-direction: column;
         row-gap: 18px;
     }
-
-    @include media-mobile {
-        flex-direction: column;
-        row-gap: 18px;
-    }
 }
 
 .review-card {
@@ -36,8 +31,8 @@
     justify-content: space-between;
     width: 100%;
     padding: 40px;
-    border-radius: 50px;
     background: $color-beige-200;
+    border-radius: 50px;
 
     @include media-mobile {
         padding: 20px;
@@ -60,13 +55,13 @@
 
 .review-card__user {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-top: 69px;
 
     @include media-mobile {
-        margin-top: 40px;
         align-items: flex-end;
+        margin-top: 40px;
     }
 }
 

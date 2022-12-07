@@ -14,10 +14,6 @@
     @include media-tablet {
         width: 100%;
     }
-
-    @include media-mobile {
-        width: 100%;
-    }
 }
 
 .form__radio {
@@ -31,11 +27,6 @@
 
 div.form__row.btn__row {
     @include media-tablet {
-        flex-direction: row;
-        column-gap: 10px;
-    }
-
-    @include media-mobile {
         flex-direction: row;
         column-gap: 10px;
     }

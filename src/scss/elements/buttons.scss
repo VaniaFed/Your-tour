@@ -11,26 +11,26 @@ button {
     @include pSmall;
 
     padding: 5px 20px;
-    border-radius: 10px;
     border: none;
-}
+    border-radius: 10px;
 
-.btn-small:hover {
-    background: $color-orange-200;
-    color: $color-white;
-}
+    &:hover {
+        background: $color-orange-200;
+        color: $color-white;
+    }
 
-.btn-small:active {
-    background: $color-orange-100;
-    color: $color-black;
+    &:active {
+        background: $color-orange-100;
+        color: $color-black;
+    }
 }
 
 .btn-large {
     @include pNormal;
     padding: 15px 72.5px;
-    border: none;
     background: $color-green-400;
     color: $color-white;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
 
@@ -43,11 +43,6 @@ button {
     }
 
     @include media-tablet {
-        padding: 12px 0;
-        width: 100%;
-    }
-
-    @include media-mobile {
         padding: 12px 0;
         width: 100%;
     }
@@ -72,19 +67,10 @@ button {
     align-items: center;
     column-gap: 15px;
     padding: 7px 20px;
-    border-radius: 50px;
     border: none;
+    border-radius: 50px;
     background: none;
     color: $color-white;
-
-    &::after {
-        content: '';
-        display: inline-flex;
-        width: 24px;
-        height: 26px;
-        align-items: center;
-        background: url('icons/arrow bt.svg');
-    }
 
     &:hover {
         background: $color-green-400;
@@ -92,5 +78,14 @@ button {
 
     &:active {
         background: $color-orange-200;
+    }
+
+    &::after {
+        content: '';
+        display: inline-flex;
+        align-items: center;
+        width: 24px;
+        height: 26px;
+        background: url('icons/arrow bt.svg');
     }
 }

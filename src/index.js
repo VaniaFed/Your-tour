@@ -1,21 +1,24 @@
-// TODO:
-// 1. pixel perfect
-// 2. header mobile bg pic
-
 'use sctict';
 
-let currentCity = null;
 const input = document.getElementsByClassName('dropdown__input').item(0);
-const dropdownWrapper = input.nextElementSibling;
-let dropdownContent = Array.from(dropdownWrapper.childNodes);
+const dropdown = input.nextElementSibling;
+let dropdownItems = Array.from(dropdown.childNodes);
+let currentCity = null;
+
+const hideDropdown = () => {
+    dropdown.classList.add('hidden');
+}
+
+const showDropdown = () => {
+    dropdown.classList.remove('hidden');
+}
 
 const initCitySelection = () => {
-    dropdownContent.forEach(select => {
-        select.addEventListener('click', ({ target }) => {
-            console.log(currentCity);
+    dropdownItems.forEach(dropdownItem => {
+        dropdownItem.addEventListener('click', ({ target }) => {
             currentCity = target.textContent;
             input.value = currentCity;
-            dropdownWrapper.classList.add('hidden');
+            hideDropdown();
         })
     });
 }
@@ -23,13 +26,13 @@ const initCitySelection = () => {
 const initCitySearch = () => {
     input.addEventListener('input', e => {
         let inputValue = e.target.value;
-        const filteredCities = dropdownContent.filter(val => {
-            return val.textContent.includes(inputValue);
+        const filteredCities = dropdownItems.filter(city => {
+            return city.textContent.includes(inputValue);
         });
 
-        dropdownWrapper.innerHTML = '';
+        dropdown.innerHTML = '';
         filteredCities.forEach(city => {
-            dropdownWrapper.append(city);
+            dropdown.append(city);
         });
     });
 }
@@ -39,19 +42,22 @@ initCitySearch();
 
 input.addEventListener('blur', () => {
     setTimeout(() => {
-        dropdownWrapper.classList.add('hidden');
+        hideDropdown();
     }, 100);
 });
 
 input.addEventListener('focus', () => {
-    dropdownWrapper.classList.remove('hidden');
+    showDropdown();
 });
+
+
+// Sticky header
 
 const headerTop = document.querySelector('.header__top');
 const body = document.querySelector('body');
+const positionXToMakeHeaderFixed = 450;
 
 document.addEventListener('scroll', () => {
-    const positionXToMakeHeaderFixed = 450;
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
         headerTop.classList.add('header__fixed');

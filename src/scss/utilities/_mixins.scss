@@ -7,9 +7,9 @@
     font-size: 96px;
     font-weight: 700;
     line-height: 104.64px;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
 
-    @include media-mobile-xl {
+    @include media-mobile {
         font-size: 34px;
         line-height: 38.08px;
     } 
@@ -23,7 +23,7 @@
 
     @include media-mobile {
         font-size: 34px;
-        letter-spacing: 0.02em;
+        letter-spacing: .02em;
         line-height: 38.08px;
     }
 }
@@ -37,9 +37,9 @@
     @include media-mobile {
         font-size: 23px;
         font-weight: 700;
-        letter-spacing: 0.04em;
+        letter-spacing: .04em;
         line-height: 27.6px;
-        letter-spacing: 0.04em;
+        letter-spacing: .04em;
     }
 }
 
@@ -72,7 +72,7 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 24.14px;
-    letter-spacing: -0.01em;
+    letter-spacing: -.01em;
 
     @include media-mobile {
         font-size: 16px;
@@ -84,5 +84,45 @@
     color: $color-black;
     &:hover::after {
         background: $color-black ;
+    }
+}
+
+@mixin input {
+    @include pNormal;
+    width: 100%;
+    height: 68px;
+    padding: 20px;
+    background: $color-beige-100;
+    border: 1px solid $color-beige-200;
+    border-radius: 10px;
+
+    &:hover {
+        background: $color-beige-200;
+        cursor: pointer;
+    }
+
+    &:focus {
+        border-color: $color-gray-300;
+        outline: none;
+    }
+
+    &::placeholder,
+    &::-webkit-datetime-edit {
+        color: $color-gray-300;
+    }
+
+    &::-webkit-datetime-edit {
+        text-transform: uppercase;
+    }
+
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-inner-spin-button {
+            display: none;
+            -webkit-appearance: none;
+    }
+
+    @include media-mobile {
+        height: 43px;
+        padding: 10px;
     }
 }
