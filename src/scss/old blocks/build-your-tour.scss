@@ -1,0 +1,33 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+// .section__top.build-your-tour__top {
+//     @include media-mobile {
+//         padding-bottom: 40px;
+//     }
+// }
+
+// .build-your-tour__text.section__text {
+//     width: 420px;
+
+//     @include media-tablet {
+//         width: 100%;
+//     }
+// }
+
+.form__radio {
+    display: flex;
+    column-gap: 31px;
+
+    @include media-mobile {
+        column-gap: 30px;
+    }
+}
+
+// div.form__row.btn__row {
+//     @include media-tablet {
+//         flex-direction: row;
+//         column-gap: 10px;
+//     }
+// }

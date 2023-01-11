@@ -1,0 +1,23 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.button_type_small {
+    @include pSmall;
+
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+	background-color: $color-white;
+	color: $color-black;
+
+    &:hover {
+        background: $color-orange-200;
+        color: $color-white;
+    }
+
+    &:active {
+        background: $color-orange-100;
+        color: $color-black;
+    }
+}

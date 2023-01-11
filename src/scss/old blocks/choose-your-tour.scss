@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .choose-your-tour__title {
     margin-bottom: 35px;
@@ -10,7 +10,7 @@
     }
 }
 
-.choose-your-tour__tabs {
+.tabs {
     display: flex;
     justify-content: center;
     column-gap: 30px;
@@ -56,7 +56,7 @@
         background: linear-gradient(360deg, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .06) 48.44%, rgba(0, 0, 0, .5) 100%);
     }
 
-    &:hover .btn-more {
+    &:hover .tour-card__button {
         background: $color-green-400;
     }
 
@@ -97,18 +97,11 @@
     }
 }
 
-.tour-card__title {
-    color: $color-white;
-}
-
 .tour-card__price {
-    @include pSmall;
-    
     margin-top: 16px;
-    color: $color-white;
 }
 
-.tour-card__btn {
+.tour-card__button {
     position: absolute;
     bottom: -7px;
     left: -20px;

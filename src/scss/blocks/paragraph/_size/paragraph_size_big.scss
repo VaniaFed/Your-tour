@@ -1,0 +1,14 @@
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.paragraph_size_big {
+    @include Roboto;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28.06px;
+
+    @include media-mobile {
+        font-size: 16px;
+        line-height: 22.72px;
+    }
+}

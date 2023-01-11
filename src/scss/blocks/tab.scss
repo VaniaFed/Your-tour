@@ -1,8 +1,8 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
-.tab {
+.tabs__item {
     @include pBig;
     position: relative;
     cursor: pointer;
@@ -23,7 +23,7 @@
     }
 }
 
-.tab_active {
+.tabs__item_active {
     color: $color-orange-200;
 
     &::after {

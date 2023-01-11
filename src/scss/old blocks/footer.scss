@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .footer {
     margin-top: 135px;
@@ -28,10 +28,6 @@
     @include media-mobile {
         padding: 21px;
     }
-}
-
-.footer__text {
-    @include pNormal;
 }
 
 .footer__links {

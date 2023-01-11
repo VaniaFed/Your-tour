@@ -1,13 +1,21 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
-section,
-section.container {
+.section {
     padding-top: 135px;
 
     @include media-mobile {
         padding-top: 75px;
+    }
+}
+
+.section__heading {
+    max-width: 760px;
+    margin: 0 auto;
+
+    @include media-tablet {
+        width: 100%;
     }
 }
 
@@ -24,9 +32,8 @@ section.container {
 }
 
 .section__text {
-    @include pNormal;
     margin-top: 30px;
-    color: $color-gray-300;
+    width: 418px;
 
     @include media-mobile {
         width: 100%;

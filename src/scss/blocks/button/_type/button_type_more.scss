@@ -1,0 +1,33 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.button_type_more {
+    @include pBig;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: $color-white;
+
+    &:hover {
+        background: $color-green-400;
+    }
+
+    &:active {
+        background: $color-orange-200;
+    }
+
+    &::after {
+        content: '';
+        display: inline-flex;
+        align-items: center;
+        width: 24px;
+        height: 26px;
+        background: url('icons/arrow bt.svg');
+    }
+}

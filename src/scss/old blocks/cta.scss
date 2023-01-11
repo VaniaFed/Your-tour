@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 @mixin media-small-notebook {
     @media (max-width: 760px) {
@@ -40,14 +40,13 @@
     }
 }
 
-.cta__title {
+.cta__heading {
     @include media-small-notebook {
         margin-top: 30px;
     }
 }
 
 .cta__text {
-    @include pNormal;
     margin-top: 20px;
 
     @include media-mobile {

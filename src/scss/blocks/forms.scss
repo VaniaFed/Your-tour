@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .form {
     padding: 70px;
@@ -227,10 +227,6 @@
             content: url(icons/checkbox-mb.svg);
         }
     }
-}
-
-.checkbox__label {
-    @include pSmall;
 }
 
 .checkbox__link.link.link_black {

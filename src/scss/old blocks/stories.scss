@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .stories__list {
     display: flex;
@@ -34,7 +34,7 @@
         height: 455px;
     }
 
-    &:hover .btn-more {
+    &:hover .storie-card__button {
         background: $color-green-400;
     }
 
@@ -77,12 +77,7 @@
     transition: transform 300ms ease;
 }
 
-.storie-card__title {
-    color: $color-white;
-}
-
 .storie-card__desc {
-    @include pNormal;
     max-width: 554px;
     margin-top: 37px;
 
@@ -93,7 +88,6 @@
 }
 
 .storie-card__advantages {
-    @include pNormal;
     margin-top: 25px;
     padding-left: 30px;
     list-style-type: disc;

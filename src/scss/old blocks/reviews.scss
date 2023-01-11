@@ -1,15 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
-
-.reviews__title {
-    max-width: 530px;
-    margin: 0 auto;
-
-    @include media-tablet {
-        width: 100%;
-    }
-}
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .reviews__list {
     display: flex;
@@ -41,7 +32,6 @@
 }
 
 .review-card__text {
-    @include pBig;
     margin-top: 28px;
 
     &:first-child {
@@ -66,9 +56,7 @@
 }
 
 .user__trip {
-    @include pSmall;
     margin-top: 8px;
-    color: $color-gray-300;
 }
 
 .user__avatar {

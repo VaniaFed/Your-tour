@@ -1,6 +1,6 @@
-@import '../utilities/variables';
-@import '../utilities/media';
-@import '../utilities/mixins';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
 
 .header {
     max-height: 831px;
@@ -128,24 +128,10 @@
     }
 }
 
-.header__title {
-    color: $color-white;
-
-    @include media-tablet {
-        @include h2;
-    }
-
-    @include media-mobile {
-        @include h1;
-    }
-}
-
 .header__desc {
-    @include pNormal;
     max-width: 562px;
     margin: 0 auto;
     margin-top: 50px;
-    color: $color-white;
 
     @include media-laptop {
         max-width: 444px;
