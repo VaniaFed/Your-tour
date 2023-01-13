@@ -2,10 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading,
-.paragraph,
-.link {
-    @include media-mobile {
-        word-wrap: break-word;
-    }
+.label {
+    @include pNormal;
+    display: block;
 }

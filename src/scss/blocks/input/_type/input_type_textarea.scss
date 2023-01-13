@@ -2,10 +2,13 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading,
-.paragraph,
-.link {
+.input_type_textarea {
+    display: flex;
+    flex-direction: column;
+    min-height: 152px;
+    resize: none;
+
     @include media-mobile {
-        word-wrap: break-word;
+        min-height: 132px;
     }
 }

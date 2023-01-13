@@ -2,10 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading,
-.paragraph,
-.link {
-    @include media-mobile {
-        word-wrap: break-word;
+.dropdown__item {
+    @include input;
+    width: 100%;
+    margin-top: 12px;
+
+    &:first-child {
+        margin-top: 0;
     }
 }

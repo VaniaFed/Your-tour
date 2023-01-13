@@ -2,10 +2,11 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading,
-.paragraph,
-.link {
+.form__radio {
+    display: flex;
+    column-gap: 31px;
+
     @include media-mobile {
-        word-wrap: break-word;
+        column-gap: 30px;
     }
 }

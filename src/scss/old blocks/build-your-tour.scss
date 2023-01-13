@@ -16,14 +16,6 @@
 //     }
 // }
 
-.form__radio {
-    display: flex;
-    column-gap: 31px;
-
-    @include media-mobile {
-        column-gap: 30px;
-    }
-}
 
 // div.form__row.btn__row {
 //     @include media-tablet {

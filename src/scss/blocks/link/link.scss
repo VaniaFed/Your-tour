@@ -4,6 +4,7 @@
 
 .link {
     @include pNormal;
+    text-decoration: none;
     color: $color-white;
 
     &::after {

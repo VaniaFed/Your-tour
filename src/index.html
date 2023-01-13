@@ -128,81 +128,79 @@
             <form class="form">
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="name" class="form__label">Имя</label>
-                        <input type="text" required minlength="3" maxlength="30" class="form__input" id="name" placeholder="Введите Ваше имя">
+                        <label for="name" class="form__label label">Имя</label>
+                        <input type="text" required minlength="3" maxlength="30" class="input" id="name" placeholder="Введите Ваше имя">
                     </div>
-                    <div class="form__field dropdow">
-                        <label for="direction" class="form__label">Направление</label>
-                        <div class="form__wrapper">
-                            <input required type="text" class="form__input dropdown__input" id="direction" placeholder="Куда хотите ехать" tabindex="1">
-                            <ul class="dropdown__content hidden">
-                                <li class="dropdown__item">Аляска</li>
-                                <li class="dropdown__item">Аргентина</li>
-                                <li class="dropdown__item">Новая зеландия</li>
-                                <li class="dropdown__item">Турция</li>
-                                <li class="dropdown__item">Кипр</li>
-                                <li class="dropdown__item">Тунис</li>
-                                <li class="dropdown__item">Греция</li>
-                                <li class="dropdown__item">Таиланд</li>
-                                <li class="dropdown__item">Индия (Гоа)</li>
-                                <li class="dropdown__item">Чехия</li>
-                                <li class="dropdown__item">ОАЭ</li>
+                    <div class="form__field">
+                        <label for="direction" class="form__label label">Направление</label>
+                        <div class="form__input-wrapper">
+                            <input required type="text" class="input input_type_dropdown" id="direction" placeholder="Куда хотите ехать" tabindex="0">
+                            <ul class="dropdown hidden">
+                                <li class="dropdown__item input">Аляска</li>
+                                <li class="dropdown__item input">Аргентина</li>
+                                <li class="dropdown__item input">Новая зеландия</li>
+                                <li class="dropdown__item input">Турция</li>
+                                <li class="dropdown__item input">Кипр</li>
+                                <li class="dropdown__item input">Тунис</li>
+                                <li class="dropdown__item input">Греция</li>
+                                <li class="dropdown__item input">Таиланд</li>
+                                <li class="dropdown__item input">Индия (Гоа)</li>
+                                <li class="dropdown__item input">Чехия</li>
+                                <li class="dropdown__item input">ОАЭ</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="email" class="form__label">Email</label>
-                        <input type="email" required minlength="6" maxlength="30" class="form__input" id="email" placeholder="example@mail.com">
+                        <label for="email" class="form__label label">Email</label>
+                        <input type="email" required minlength="6" maxlength="30" class="input" id="email" placeholder="example@mail.com">
                     </div>
                     <div class="form__field">
-                        <label for="phone" class="form__label">Телефон</label>
-                        <input type="tel" required minlength="6" maxlength="12" class="form__input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
-                    </div>
-                </div>
-                <div class="form__row">
-                    <div class="form__field">
-                        <label for="date-from" class="form__label">Дата от</label>
-                        <input type="date" required minlength="8" maxlength="8" class="form__input" id="date-from" placeholder="ДД.ММ.ГГГГ">
-                    </div>
-                    <div class="form__field">
-                        <label for="date-to" class="form__label">Дата до</label>
-                        <input type="date" required minlength="8" maxlength="8" class="form__input" id="date-to" placeholder="ДД.ММ.ГГГГ">
+                        <label for="phone" class="form__label label">Телефон</label>
+                        <input type="tel" required minlength="6" maxlength="12" class="input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="comment" class="form__label">Комментарий</label>
-                        <textarea name="comment" id="comment" class="form__input form__textarea"></textarea>
+                        <label for="date-from" class="form__label label">Дата от</label>
+                        <input type="date" required minlength="8" maxlength="8" class="input" id="date-from" placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                    <div class="form__field">
+                        <label for="date-to" class="form__label label">Дата до</label>
+                        <input type="date" required minlength="8" maxlength="8" class="input" id="date-to" placeholder="ДД.ММ.ГГГГ">
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label class="form__label">Вам есть 18 лет?</label>
+                        <label for="comment" class="form__label label">Комментарий</label>
+                        <textarea name="comment" id="comment" class="input input_type_textarea"></textarea>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__field">
+                        <label class="form__label label">Вам есть 18 лет?</label>
                         <div class="form__radio">
                             <label class="radio">
                                 <input type="radio" required name="age" class="radio__input">
-                                <span class="radio__fake fake__control"></span>
-                                <span class="radio__label">Да</span>
+                                <span class="fake-control fake-control_type_radio"></span>
+                                <span class="radio__label label">Да</span>
                             </label>
                             <label class="radio">
                                 <input type="radio" required name="age" class="radio__input">
-                                <span class="radio__fake fake__control"></span>
-                                <span class="radio__label">Нет</span>
+                                <span class="fake-control fake-control_type_radio"></span>
+                                <span class="radio__label label">Нет</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <div class="form__checkbox">
-                            <label class="checkbox">
-                                <input type="checkbox" required name="license_agreement" class="checkbox__input">
-                                <span class="checkbox__fake fake__control"></span>
-                                <span class="checkbox__label"><span class="paragraph paragraph_color_grey paragraph_size_sm">Нажимая кнопку, я принимаю условия</span> <span class="link link_type_small link_color_black checkbox__link">Лицензионного договора</span></span>
-                            </label>
-                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox" required name="license_agreement" class="checkbox__input">
+                            <span class="fake-control fake-control_type_checkbox"></span>
+                            <span class="label"><span class="paragraph paragraph_color_grey paragraph_size_sm">Нажимая кнопку, я принимаю условия</span> <span class="link link_type_small link_color_black checkbox__link">Лицензионного договора</span></span>
+                        </label>
                     </div>
                 </div>
                 <div class="form__row btn__row">

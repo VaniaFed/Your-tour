@@ -1,6 +1,6 @@
 'use sctict';
 
-const input = document.getElementsByClassName('dropdown__input').item(0);
+const input = document.getElementsByClassName('input_type_dropdown').item(0);
 const dropdown = input.nextElementSibling;
 let dropdownItems = Array.from(dropdown.childNodes);
 let currentCity = null;
