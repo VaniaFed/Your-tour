@@ -229,15 +229,6 @@
     }
 }
 
-.checkbox__link.link.link_black {
+.checkbox__link {
     display: inline-block;
-    font-size: 17px;
-
-    &:active {
-        color: $color-green-400;
-    }
-
-    &:active::after {
-        background: $color-green-400;
-    }
 }

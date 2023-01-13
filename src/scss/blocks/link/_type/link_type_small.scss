@@ -1,0 +1,14 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.link_type_small {
+	@include pSmall;
+    &:active {
+        color: $color-green-400;
+    }
+
+    &:active::after {
+        background: $color-green-400;
+    }
+}

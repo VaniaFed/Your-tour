@@ -56,14 +56,26 @@ input.addEventListener('focus', () => {
 const headerTop = document.querySelector('.header__top');
 const body = document.querySelector('body');
 const positionXToMakeHeaderFixed = 450;
+const headerLinks = document.querySelectorAll('.header__top  .link');
 
 document.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
         headerTop.classList.add('header__fixed');
         body.classList.add('body_header-fixed');
+        makeLinksBlack(headerLinks);
     } else {
         headerTop.classList.remove('header__fixed');
         body.classList.remove('body_header-fixed');
+        makeLinksWhite(headerLinks);
     }
 });
+
+
+const makeLinksBlack = links => {
+    links.forEach(link => link.classList.add('link_color_black'));
+}
+
+const makeLinksWhite = links => {
+    links.forEach(link => link.classList.remove('link_color_black'));
+}

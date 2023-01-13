@@ -16,19 +16,4 @@
     &:hover::after {
         background: $color-white;
     }
-
-    &_social,
-    &_social.link_black {
-        &:active {
-            color: $color-orange-200;
-        }
-
-        &:active::after {
-            background: $color-orange-200;
-        }
-    }
-
-    &_black {
-        @include link_black;
-    }
 }

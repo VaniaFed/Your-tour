@@ -80,13 +80,6 @@
     }
 }
 
-@mixin link_black {
-    color: $color-black;
-    &:hover::after {
-        background: $color-black ;
-    }
-}
-
 @mixin input {
     @include pNormal;
     width: 100%;
