@@ -10,19 +10,6 @@
     }
 }
 
-.tabs {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 10px;
-    flex-wrap: wrap;
-    min-height: 34px;
-
-    @include media-tablet {
-        column-gap: 10px;
-    }
-}
-
 .choose-your-tour__tours {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -36,6 +23,10 @@
     @include media-tablet {
         grid-template-columns: 1fr;
     }
+}
+
+.choose-your-tour__card {
+
 }
 
 .tour-card {
@@ -95,10 +86,6 @@
     @include media-mobile {
         height: 318px;
     }
-}
-
-.tour-card__price {
-    margin-top: 16px;
 }
 
 .tour-card__button {

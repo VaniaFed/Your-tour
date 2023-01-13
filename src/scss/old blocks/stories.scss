@@ -65,17 +65,17 @@
     }
 }
 
-.storie-card__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 300ms ease;
-}
+// .storie-card__image {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: -2;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: transform 300ms ease;
+// }
 
 .storie-card__desc {
     max-width: 554px;
@@ -93,18 +93,9 @@
     list-style-type: disc;
 }
 
-.storie-card__bottom {
-    position: relative;
-    bottom: -7px;
-    left: -20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 // TODO: card__links
 // TODO: сделать карточку из этой сущности
-.social-media-links {
+.card__links {
     position: relative;
     right: -20px;
     display: flex;

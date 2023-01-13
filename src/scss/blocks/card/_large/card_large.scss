@@ -1,0 +1,11 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.card_large {
+	padding: 60px;
+	
+	&::before {
+		background: linear-gradient(270deg,transparent .01%,rgba(0,0,0,.2) 100%);
+	}
+}
