@@ -1,3 +1,19 @@
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+
+    @include media-small-notebook {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include media-tablet {
+        text-align: center;
+    }
+}
