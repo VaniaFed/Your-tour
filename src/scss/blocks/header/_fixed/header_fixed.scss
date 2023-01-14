@@ -1,0 +1,17 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.header_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(#F3EFE8, .6);
+    backdrop-filter: blur(10px);
+
+    .logo-pic {
+        fill: $color-black;
+    }
+}

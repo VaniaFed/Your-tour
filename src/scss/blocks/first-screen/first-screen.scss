@@ -1,0 +1,9 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.first-screen{
+	background: url(img/header/header-img.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}

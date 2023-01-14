@@ -53,19 +53,19 @@ input.addEventListener('focus', () => {
 
 // Sticky header
 
-const headerTop = document.querySelector('.header__top');
+const headerTop = document.querySelector('.header');
 const body = document.querySelector('body');
 const positionXToMakeHeaderFixed = 450;
-const headerLinks = document.querySelectorAll('.header__top  .link');
+const headerLinks = document.querySelectorAll('.header  .link');
 
 document.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
-        headerTop.classList.add('header__fixed');
+        headerTop.classList.add('header_fixed');
         body.classList.add('body_header-fixed');
         makeLinksBlack(headerLinks);
     } else {
-        headerTop.classList.remove('header__fixed');
+        headerTop.classList.remove('header_fixed');
         body.classList.remove('body_header-fixed');
         makeLinksWhite(headerLinks);
     }

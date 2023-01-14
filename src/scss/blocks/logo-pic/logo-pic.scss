@@ -2,6 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta__content {
-    max-width: 371px;
+.logo-pic {
+    width: 181.84px;
+
+    @include media-tablet {
+        width: 133px;
+    }
 }
