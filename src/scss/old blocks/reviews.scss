@@ -16,50 +16,29 @@
     }
 }
 
-.review-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 40px;
-    background: $color-beige-200;
-    border-radius: 50px;
+// .review-card {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 100%;
+//     padding: 40px;
+//     background: $color-beige-200;
+//     border-radius: 50px;
 
-    @include media-mobile {
-        padding: 20px;
-        border-radius: 20px;
-    }
-}
+// }
 
-.review-card__text {
-    margin-top: 28px;
 
-    &:first-child {
-        margin-top: 0;
-    }
-}
+// TODO: сделать в элементе
+// .card-review__bottom {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 69px;
 
-.user__right {
-    display: flex;
-}
+//     @include media-mobile {
+//         align-items: flex-end;
+//         margin-top: 40px;
+//     }
+// }
 
-.review-card__user {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 69px;
 
-    @include media-mobile {
-        align-items: flex-end;
-        margin-top: 40px;
-    }
-}
-
-.user__trip {
-    margin-top: 8px;
-}
-
-.user__avatar {
-    width: 75px;
-    border-radius: 50px;
-}
