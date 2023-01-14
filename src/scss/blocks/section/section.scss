@@ -2,6 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages__item {
+.section {
+    padding-top: 135px;
 
+    @include media-mobile {
+        padding-top: 75px;
+    }
 }

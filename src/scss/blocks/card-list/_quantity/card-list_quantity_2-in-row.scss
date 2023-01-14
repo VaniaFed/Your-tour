@@ -2,6 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages__item {
-
+.card-list_quantity_2-in-row {
+    grid-template-columns: 1fr 1fr;
 }

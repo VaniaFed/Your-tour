@@ -1,0 +1,15 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.card_height_567 {
+	height: 567px;
+	   
+    @include media-tablet {
+        height: auto;
+    }
+
+    @include media-mobile {
+        height: 455px;
+    }
+}

@@ -2,19 +2,19 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.reviews__list {
-    display: flex;
-    column-gap: 30px;
+// .reviews__list {
+//     display: flex;
+//     column-gap: 30px;
 
-    @include media-laptop {
-        column-gap: 18px;
-    }
+//     @include media-laptop {
+//         column-gap: 18px;
+//     }
 
-    @include media-tablet {
-        flex-direction: column;
-        row-gap: 18px;
-    }
-}
+//     @include media-tablet {
+//         flex-direction: column;
+//         row-gap: 18px;
+//     }
+// }
 
 // .review-card {
 //     display: flex;

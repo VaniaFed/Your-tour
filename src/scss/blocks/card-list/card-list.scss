@@ -2,6 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages__item {
-
+.card-list {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
 }

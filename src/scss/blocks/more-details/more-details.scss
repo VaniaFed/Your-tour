@@ -2,15 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.user {
+.more-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	// TODO: в элемент вынести отступы
-    margin-top: 69px;
 
     @include media-mobile {
         align-items: flex-end;
-        margin-top: 40px;
     }
 }

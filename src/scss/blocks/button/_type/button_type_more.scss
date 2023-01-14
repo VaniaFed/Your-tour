@@ -4,15 +4,14 @@
 
 .button_type_more {
     @include pBig;
-
     display: flex;
     align-items: center;
     column-gap: 15px;
     padding: 7px 20px;
-    border: none;
-    border-radius: 50px;
     background: none;
     color: $color-white;
+    border: none;
+    border-radius: 50px;
 
     &:hover {
         background: $color-green-400;

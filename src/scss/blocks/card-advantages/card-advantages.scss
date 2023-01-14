@@ -1,0 +1,9 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.card-advantages {
+    // margin-top: 25px;
+    padding-left: 30px;
+    list-style-type: disc;
+}

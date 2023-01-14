@@ -3,67 +3,60 @@
 @import 'src/scss/utilities/mixins';
 
 .stories__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-
-    @include media-mobile {
-        row-gap: 20px;
-    }
 }
 
-.storie-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 567px;
-    padding: 60px;
-    overflow: hidden;
-    color: $color-white;
-    border-radius: 50px;
+// .storie-card {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 100%;
+//     height: 567px;
+//     padding: 60px;
+//     overflow: hidden;
+//     color: $color-white;
+//     border-radius: 50px;
 
-    @include media-tablet {
-        height: auto;
-        padding: 30px;
-        border-radius: 20px;
-    }
+//     @include media-tablet {
+//         height: auto;
+//         padding: 30px;
+//         border-radius: 20px;
+//     }
 
-    @include media-mobile {
-        height: 455px;
-    }
+//     @include media-mobile {
+//         height: 455px;
+//     }
 
-    &:hover .storie-card__button {
-        background: $color-green-400;
-    }
+//     &:hover .storie-card__button {
+//         background: $color-green-400;
+//     }
 
-    &:hover .storie-card__image {
-        transform: scale(1.2);
-    }
+//     &:hover .storie-card__image {
+//         transform: scale(1.2);
+//     }
 
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, .2) 100%);
-    }
-}
+//     &::before {
+//         content: '';
+//         display: block;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         z-index: -1;
+//         background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, .2) 100%);
+//     }
+// }
 
-.storie-card__top {
-    @include media-tablet {
-        padding-bottom: 40px;
-    }
+// .storie-card__top {
+//     @include media-tablet {
+//         padding-bottom: 40px;
+//     }
 
-    @include media-mobile {
-        padding-bottom: 0;
-    }
-}
+//     @include media-mobile {
+//         padding-bottom: 0;
+//     }
+// }
 
 // .storie-card__image {
 //     position: absolute;
@@ -77,31 +70,12 @@
 //     transition: transform 300ms ease;
 // }
 
-.storie-card__desc {
-    max-width: 554px;
-    margin-top: 37px;
+// .storie-card__desc {
+//     max-width: 554px;
+//     margin-top: 37px;
 
-    @include media-tablet {
-        max-width: none;
-        margin-top: 20px;
-    }
-}
-
-.storie-card__advantages {
-    margin-top: 25px;
-    padding-left: 30px;
-    list-style-type: disc;
-}
-
-// TODO: card__links
-// TODO: сделать карточку из этой сущности
-.card__links {
-    position: relative;
-    right: -20px;
-    display: flex;
-    column-gap: 35px;
-
-    @include media-tablet {
-        display: none;
-    }
-}
+//     @include media-tablet {
+//         max-width: none;
+//         margin-top: 20px;
+//     }
+// }

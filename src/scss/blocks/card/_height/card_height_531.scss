@@ -2,6 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages__item {
-
+.card_height_531 {
+	height: 531px;
+	   
+    @include media-mobile {
+        height: 318px;
+    }
 }

@@ -2,94 +2,17 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.choose-your-tour__title {
-    margin-bottom: 35px;
+// .choose-your-tour__tours {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-gap: 30px;
 
-    @include media-mobile {
-        margin-bottom: 30px;
-    }
-}
+//     @include media-laptop {
+//         grid-template-columns: 1fr 1fr;
+//         grid-gap: 18px;
+//     }
 
-.choose-your-tour__tours {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-
-    @include media-laptop {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 18px;
-    }
-
-    @include media-tablet {
-        grid-template-columns: 1fr;
-    }
-}
-
-.choose-your-tour__card {
-
-}
-
-.tour-card {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    border-radius: 50px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        display: block;
-        background: linear-gradient(360deg, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .06) 48.44%, rgba(0, 0, 0, .5) 100%);
-    }
-
-    &:hover .tour-card__button {
-        background: $color-green-400;
-    }
-
-    &:hover .tour-card__image {
-        transform: scale(1.2);
-    }
-
-    @include media-mobile {
-        border-radius: 20px;
-    }
-}
-
-.tour-card__content {
-    position: absolute;
-    top: 50px;
-    bottom: 50px;
-    left: 50px;
-    z-index: 2;
-
-    @include media-mobile {
-        top: 25px;
-        bottom: 25px;
-        left: 25px;
-    }
-}
-
-.tour-card__image {
-    width: 100%;
-    object-fit: cover;
-    transition: transform 300ms ease;
-
-    @include media-laptop {
-        height: 531px;
-    }
-
-    @include media-mobile {
-        height: 318px;
-    }
-}
-
-.tour-card__button {
-    position: absolute;
-    bottom: -7px;
-    left: -20px;
-}
+//     @include media-tablet {
+//         grid-template-columns: 1fr;
+//     }
+// }

@@ -7,21 +7,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 567px;
     padding: 50px;
     overflow: hidden;
     color: $color-white;
     border-radius: 50px;
-
-    @include media-tablet {
-        height: auto;
-        padding: 30px;
-        border-radius: 20px;
-    }
-
-    @include media-mobile {
-        height: 455px;
-    }
 
     &:hover .card__button {
         background: $color-green-400;
@@ -33,6 +22,16 @@
 
     &:hover .card__image {
         transform: scale(1.2);
+    }
+
+    @include media-tablet {
+        height: auto;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    @include media-mobile {
+        height: 455px;
     }
 
     &::before {
