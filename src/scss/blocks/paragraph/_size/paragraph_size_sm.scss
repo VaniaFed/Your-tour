@@ -2,14 +2,5 @@
 @import 'src/scss/utilities/mixins';
 
 .paragraph_size_sm {
-    @include Roboto;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24.14px;
-    letter-spacing: -.01em;
-
-    @include media-mobile {
-        font-size: 16px;
-        line-height: 22.72px;
-    }
+    @include pSmall;
 }
