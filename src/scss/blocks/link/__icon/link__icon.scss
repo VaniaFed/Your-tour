@@ -2,16 +2,14 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-review {
-	padding: 40px;
-	background: $color-beige-200;
+.link__icon {
+	display: inline-block;
+    width: 26px;
+	margin-right: 10px;
 
     @include media-mobile {
-        padding: 20px;
-        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+		margin-right: 5px;
     }
-
-	&::before {
-		background: none;
-	}
 }

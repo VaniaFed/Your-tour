@@ -6,4 +6,12 @@
 	background: url(img/header/header-img.jpg) no-repeat;
     background-size: cover;
     background-position-y: center;
+    
+    @include media-laptop {
+        background-position-x: -110px;
+    }
+
+    @include media-tablet {
+        max-height: 1024px;
+    }
 }

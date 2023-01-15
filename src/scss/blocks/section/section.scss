@@ -3,9 +3,9 @@
 @import 'src/scss/utilities/mixins';
 
 .section {
-    padding-top: 135px;
+    margin-top: 135px;
 
     @include media-mobile {
-        padding-top: 75px;
+        margin-top: 75px;
     }
 }

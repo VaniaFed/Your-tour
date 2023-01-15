@@ -3,9 +3,10 @@
 @import 'src/scss/utilities/mixins';
 
 .page__header {
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
     height: 88px;
 }

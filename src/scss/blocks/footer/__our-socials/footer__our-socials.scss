@@ -2,7 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages {
-    padding-left: 30px;
-    list-style-type: disc;
+.footer__our-socials {
+    @include media-mobile {
+        margin-top: 7px
+    }
 }

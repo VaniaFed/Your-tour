@@ -2,10 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.menu {
-    display: flex;
-
-    @media (max-width: 810px) {
-        display: none; 
+.our-socials__links {
+    @include media-tablet {
+        margin-top: 7px;
     }
 }

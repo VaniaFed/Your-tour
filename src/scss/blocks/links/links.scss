@@ -2,13 +2,16 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.user {
+.links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    column-gap: 25px;
+    
+    @include media-tablet {
+        column-gap: 15px;
+    }
 
     @include media-mobile {
-        align-items: flex-end;
-        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

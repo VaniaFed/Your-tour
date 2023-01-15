@@ -2,13 +2,17 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.user {
+.our-socials {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+
+    @include media-tablet {
+        flex-direction: column;
+    }
 
     @include media-mobile {
-        align-items: flex-end;
-        margin-top: 40px;
+        padding: 21px;
     }
 }
