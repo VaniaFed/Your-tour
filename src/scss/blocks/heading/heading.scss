@@ -6,17 +6,5 @@
     @include Roboto;
     font-size: 96px;
     font-weight: 700;
-    line-height: 104.64px;
-    letter-spacing: .02em;
     color: $color-white;
-
-    @include media-tablet {
-        @include h2;
-    }
-
-    @include media-mobile {
-        @include h1;
-        font-size: 34px;
-        line-height: 38.08px;
-    } 
 }

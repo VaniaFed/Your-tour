@@ -2,8 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.section__text {
-    width: 418px;
+.heading-with-content__paragraph {
+    max-width: 408px;
 
     @include media-mobile {
         width: 100%;
