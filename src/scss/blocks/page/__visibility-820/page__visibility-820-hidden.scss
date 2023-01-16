@@ -2,8 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-@include media-mobile {
-	.page__mobile-visibility_hidden {
-		display: none;
-	}
+.page__visibility-820-hidden {
+    @media (max-width: 820px) {
+        display: none; 
+    }
 }

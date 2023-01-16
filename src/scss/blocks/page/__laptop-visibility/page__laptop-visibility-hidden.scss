@@ -2,8 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.page_tablet-visibility_hidden {
-    @include media-tablet {
-        display: none;
-    }
+@include media-laptop {
+	.page__laptop-visibility-hidden {
+		display: none;
+	}
 }

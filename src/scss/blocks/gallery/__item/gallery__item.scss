@@ -2,33 +2,33 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
+$gallery__item-width-4-in-row-desktop: calc(25% - 30px + (30px / 4));
+$gallery__item-width-5-in-row-desktop: calc(20% - 30px + (30px / 5));
+
+$gallery__item-width-3-in-row-laptop: calc(33.33% - 20px + (20px / 3));
+$gallery__item-width-4-in-row-laptop: calc(25% - 20px + (20px / 4));
+
+$gallery__item-width-2-in-row-mobile: calc(50% - 10px + (10px / 2));
+$gallery__item-width-3-in-row-mobile: calc(33.33% - 10px + (10px / 3));
+
+
 .gallery__item {
-	// display: block;
-	width: calc(25% - 30px + (30px / 4));
+	width: $gallery__item-width-4-in-row-desktop;
 	height: 301px;
 	object-fit: cover;
 	border-radius: 50px;
 
-	/*
-	TODO:
-		1. [DONE] доделать галерею
-		2. вынести в модификаторы код ниже
-		3. зарефакторить всё
-		4. чекнуть pixel перфект
-		5. править адаптив
-	*/
-
 	@include desktop-only {
 		&:nth-child(n+5):nth-child(-n+9) {
-			width: calc(20% - 30px + (30px / 5));
+			width: $gallery__item-width-5-in-row-desktop;
 		}
 	}
 
 	@include media-laptop {
-		width: calc(33.33% - 20px + (20px / 3));
+		width: $gallery__item-width-3-in-row-laptop;
 		
 		&:nth-child(n+5):nth-child(-n+9) {
-			width: calc(25% - 20px + (20px / 4));
+			width: $gallery__item-width-4-in-row-laptop;
 		}
 	}
 
@@ -38,12 +38,12 @@
     }
 
 	@include media-mobile {
-		width: calc(50% - 10px + (10px / 2));
+		width: $gallery__item-width-2-in-row-mobile;
 		height: 110px;
 		border-radius: 20px;
 
 		&:nth-child(n+5):nth-child(-n+9) {
-			width: calc(33.33% - 10px + (10px / 3));
+			width: $gallery__item-width-3-in-row-mobile;
 		}
 
 		&:first-child {
