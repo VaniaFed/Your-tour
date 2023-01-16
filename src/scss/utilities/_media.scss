@@ -1,3 +1,9 @@
+@mixin desktop-only {
+    @media (min-width: 1024px) and (max-width: 1920px) {
+        @content;
+    }
+}
+
 @mixin media-laptop {
     @media (max-width: 1024px) {
         @content;
