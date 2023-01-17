@@ -11,6 +11,6 @@
     }
 
     @include media-mobile {
-        @include h2_mobile;
+        @include heading_size_2_mobile;
     }
 }

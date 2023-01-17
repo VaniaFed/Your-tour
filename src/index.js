@@ -54,6 +54,7 @@ input.addEventListener('focus', () => {
 // Sticky header
 
 const header = document.querySelector('.header');
+const logoPic = document.querySelector('.logo-pic');
 const positionXToMakeHeaderFixed = 450;
 const headerLinks = document.querySelectorAll('.header .link');
 
@@ -61,9 +62,11 @@ document.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (y > positionXToMakeHeaderFixed) {
         header.classList.add('header_fixed');
+        logoPic.classList.add('logo-pic_color_black');
         makeLinksBlack(headerLinks);
     } else {
         header.classList.remove('header_fixed');
+        logoPic.classList.remove('logo-pic_color_black');
         makeLinksWhite(headerLinks);
     }
 });

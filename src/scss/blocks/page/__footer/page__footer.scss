@@ -2,7 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.label {
-    @include paragraph;
-    display: block;
+.page__footer {
+	margin-top: 135px;
+
+	@include media-mobile {
+		margin-top: 75px;
+	}
 }

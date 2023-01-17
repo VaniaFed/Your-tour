@@ -2,13 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.link_type_small {
-	@include pSmall;
+.link_color-active_green {
     &:active {
         color: $color-green-400;
     }
-
+    
     &:active::after {
-        background: $color-green-400;
+        background-color: $color-green-400;
     }
 }

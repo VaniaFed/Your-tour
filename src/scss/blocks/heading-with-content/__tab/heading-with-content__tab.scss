@@ -2,7 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.more-details__links {
-    position: relative;
-    right: -20px;
+.heading-with-content__tab {
+    min-height: 34px;
 }

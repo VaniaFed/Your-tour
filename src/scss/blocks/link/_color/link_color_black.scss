@@ -4,6 +4,7 @@
 
 .link_color_black {
     color: $color-black;
+
     &:hover::after {
         background: $color-black;
     }

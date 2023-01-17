@@ -2,7 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.label {
-    @include paragraph;
-    display: block;
+.link_size_small {
+	@include paragraph_size_sm;
 }

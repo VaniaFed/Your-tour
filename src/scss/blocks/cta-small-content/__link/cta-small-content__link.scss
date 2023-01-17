@@ -4,12 +4,4 @@
 
 .cta-small-content__link {
     display: inline-block;
-
-    &:active {
-        color: $color-green-400;
-    }
-    
-    &:active::after {
-        background-color: $color-green-400;
-    }
 }

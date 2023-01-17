@@ -2,10 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading,
-.paragraph,
-.link {
+.main {
+	display: flex;
+    flex-direction: column;
+    row-gap: 135px;
+
     @include media-mobile {
-        word-wrap: break-word;
+        row-gap: 75px;
     }
 }

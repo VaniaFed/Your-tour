@@ -3,7 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .link {
-    @include pNormal;
+    @include paragraph;
     text-decoration: none;
     color: $color-white;
 
@@ -16,5 +16,9 @@
 
     &:hover::after {
         background: $color-white;
+    }
+    
+    @include media-mobile {
+        word-wrap: break-word;
     }
 }

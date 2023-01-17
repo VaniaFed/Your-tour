@@ -7,8 +7,11 @@
 		column-gap: 30px;
 	}
 
+	@include media-tablet {
+		flex-direction: row;		
+	}
+
 	@include media-mobile {
-		flex-direction: row;
 		column-gap: 10px;
 	}
 }

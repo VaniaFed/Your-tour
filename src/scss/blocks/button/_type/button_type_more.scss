@@ -3,7 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .button_type_more {
-    @include pBig;
+    @include paragraph_size_big;
     display: flex;
     align-items: center;
     column-gap: 15px;

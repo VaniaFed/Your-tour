@@ -2,6 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-advantages__item {
-
+.main__first-screen {
+    @include media-tablet {
+        max-height: 1024px;
+    }
 }

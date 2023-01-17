@@ -22,12 +22,6 @@
     }
 }
 
-@mixin desktop-only {
-    @media (min-width: 1024px) and (max-width: 1920px) {
-        @content;
-    }
-}
-
 // CERTAIN DEVICE ONLY
 
 @mixin media-laptop-only {
@@ -36,4 +30,8 @@
     }
 }
 
-
+@mixin desktop-only {
+    @media (min-width: 1024px) and (max-width: 1920px) {
+        @content;
+    }
+}

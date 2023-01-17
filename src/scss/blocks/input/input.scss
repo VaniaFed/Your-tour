@@ -3,7 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .input {
-    @include pNormal;
+    @include paragraph;
     padding: 20px;
     background: $color-beige-100;
     border: 1px solid $color-beige-200;

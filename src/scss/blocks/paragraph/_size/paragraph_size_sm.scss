@@ -2,5 +2,5 @@
 @import 'src/scss/utilities/mixins';
 
 .paragraph_size_sm {
-    @include pSmall;
+    @include paragraph_size_sm;
 }

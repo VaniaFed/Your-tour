@@ -3,6 +3,10 @@
 @import 'src/scss/utilities/mixins';
 
 .paragraph {
-    @include pNormal;
+    @include paragraph;
     color: $color-white;
+    
+    @include media-mobile {
+        word-wrap: break-word;
+    }
 }

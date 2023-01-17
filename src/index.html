@@ -34,11 +34,11 @@
                 <li><a class="link" href="#" target="_blank">Отзывы</a></li>
                 <li><a class="link" href="#" target="_blank">Истории</a></li>
             </ul>
-            <a class="link phone" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+            <a class="link" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
         </nav>
     </header>
-    <main>
-        <div class="first-screen">
+    <main class="main">
+        <div class="first-screen main__first-screen">
             <div class="cta first-screen__cta container">
                 <h1 class="heading heading_size_1">Идеальные путешествия существуют</h1>
                 <p class="paragraph cta__paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
@@ -48,7 +48,7 @@
         <section class="section container">
             <div class="heading-with-content section__top">
                 <h2 class="heading heading_size_2 heading_color_black">Выбери свой тур</h2>
-                <ul class="tab heading-with-content__content heading-with-content__content_mt_35">
+                <ul class="tab heading-with-content__content heading-with-content__tab heading-with-content__content_mt_35">
                     <li class="tab__item tab__item_active">Популярные</li>
                     <li class="tab__item">Авторские</li>
                     <li class="tab__item">Походы</li>
@@ -134,7 +134,7 @@
                         <label for="direction" class="form__label label">Направление</label>
                         <div class="form__input-wrapper">
                             <input required type="text" class="input form__input input_type_dropdown" id="direction" placeholder="Куда хотите ехать" tabindex="0">
-                            <ul class="dropdown hidden">
+                            <ul class="dropdown form__dropdown hidden">
                                 <li class="dropdown__item input">Аляска</li>
                                 <li class="dropdown__item input">Аргентина</li>
                                 <li class="dropdown__item input">Новая зеландия</li>
@@ -173,7 +173,7 @@
                 <div class="form-row form__row">
                     <div class="form__field">
                         <label for="comment" class="form__label label">Комментарий</label>
-                        <textarea name="comment" id="comment" class="input input_type_textarea form__input"></textarea>
+                        <textarea name="comment" id="comment" class="input input_type_textarea form__textarea form__input"></textarea>
                     </div>
                 </div>
                 <div class="form-row form__row">
@@ -198,7 +198,7 @@
                         <label class="checkbox">
                             <input type="checkbox" required name="license_agreement" class="checkbox__input">
                             <span class="fake-control fake-control_type_checkbox"></span>
-                            <span><span class="paragraph paragraph_color_grey paragraph_size_sm">Нажимая кнопку, я принимаю условия</span> <span class="link link_type_small link_color_black checkbox__link">Лицензионного договора</span></span>
+                            <p><span class="paragraph paragraph_color_grey paragraph_size_sm">Нажимая кнопку, я принимаю условия</span> <span class="link link_size_small link_color_black link_color-active_green checkbox__link">Лицензионного договора</span></p>
                         </label>
                     </div>
                 </div>
@@ -274,22 +274,22 @@
                         <h3 class="heading heading_size_3">Автостопом в Стамбул</h3>
                         <p class="paragraph card__paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
                         <ul class="paragraph card-advantages card__advantages">
-                            <li class="card-advantages__item">вкусная еда</li>
-                            <li class="card-advantages__item">дешевый транспорт</li>
-                            <li class="card-advantages__item">красивый город.</li>
+                            <li>вкусная еда</li>
+                            <li>дешевый транспорт</li>
+                            <li>красивый город.</li>
                         </ul>
                     </div>
                     <div class="more-details card__bottom">
                         <button class="button button_type_more card__button">Подробнее</button>
-                        <ul class="more-details__links links links_gap_35 page__tablet-visibility-hidden">
+                        <ul class="card__links links links_gap_35 page__tablet-visibility-hidden">
                             <li>
-                                <a class="link link_type_social" href="#">instagram</a>
+                                <a class="link link_color-active_orange" href="#">instagram</a>
                             </li>
                             <li>
-                                <a class="link link_type_social" href="#">facebook</a>
+                                <a class="link link_color-active_orange" href="#">facebook</a>
                             </li>
                             <li>
-                                <a class="link link_type_social" href="#">YouTube</a>
+                                <a class="link link_color-active_orange" href="#">YouTube</a>
                             </li>
                         </ul>
                     </div>
@@ -302,12 +302,12 @@
                     </div>
                     <div class="more-details card__bottom">
                         <button class="button button_type_more card__button">Подробнее</button>
-                        <ul class="more-details__links links links_gap_35 page__tablet-visibility-hidden">
+                        <ul class="card__links links links_gap_35 page__tablet-visibility-hidden">
                             <li>
-                                <a class="link link_type_social" href="#">instagram</a>
+                                <a class="link link_color-active_orange" href="#">instagram</a>
                             </li>
                             <li>
-                                <a class="link link_type_social" href="#">ВКонтакте</a>
+                                <a class="link link_color-active_orange" href="#">ВКонтакте</a>
                             </li>
                         </ul>
                     </div>
@@ -320,15 +320,15 @@
                     </div>
                     <div class="more-details card__bottom">
                         <button class="button button_type_more card__button">Подробнее</button>
-                        <ul class="more-details__links links links_gap_35 page__tablet-visibility-hidden">
+                        <ul class="card__links links links_gap_35 page__tablet-visibility-hidden">
                             <li>
-                                <a class="link link_type_social" href="#">instagram</a>
+                                <a class="link link_color-active_orange" href="#">instagram</a>
                             </li>
                             <li>
-                                <a class="link link_type_social" href="#">facebook</a>
+                                <a class="link link_color-active_orange" href="#">facebook</a>
                             </li>
                             <li>
-                                <a class="link link_type_social" href="#">ВКонтакте</a>
+                                <a class="link link_color-active_orange" href="#">ВКонтакте</a>
                             </li>
                         </ul>
                     </div>
@@ -339,17 +339,17 @@
             <img src="img/Travel with us/footer photo.jpg" alt="Travel With us" class="cta-small__image">
             <div class="cta-small-content cta-small__content">
                 <h3 class="heading heading_size_3 heading_color_black cta-small-content__heading">Пора в путешествие вместе с нами!</h3>
-                <p class="paragraph paragraph_color_grey cta-small-content__paragraph">Напиши на почту и узнай подробности на <a href="#" target="_blank" class="link link_color_black cta-small-content__link">yourtour@gmail.com</a></p>
+                <p class="paragraph paragraph_color_grey cta-small-content__paragraph">Напиши на почту и узнай подробности на <a href="#" target="_blank" class="link link_color_black link_color-active_green cta-small-content__link">yourtour@gmail.com</a></p>
             </div>
         </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer page__footer">
         <div class="container container_size_1168 our-socials footer__our-socials">
             <p class="paragraph paragraph_color_grey">Наши социальные сети</p>
             <ul class="links our-socials__links">
-                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/inst.svg" alt="instagram" class="link__icon"><span class="footer__link-text link link_color_black link_type_social">instagram</span></a></li>
-                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/fb.svg" alt="fb" class="link__icon"><span class="footer__link-text link link_color_black link_type_social">facebook</span></a></li>
-                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/vk.svg" alt="vk" class="link__icon"><span class="footer__link-text link link_color_black link_type_social">vkontakte</span></a></li>
+                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/inst.svg" alt="instagram" class="link__icon"><span class="footer__link-text link link_color_black link_color-active_orange">instagram</span></a></li>
+                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/fb.svg" alt="fb" class="link__icon"><span class="footer__link-text link link_color_black link_color-active_orange">facebook</span></a></li>
+                <li><a href="#" class="link link_with-icon" target="_blank"><img src="icons/vk.svg" alt="vk" class="link__icon"><span class="footer__link-text link link_color_black link_color-active_orange">vkontakte</span></a></li>
             </ul>
         </div>
     </footer>

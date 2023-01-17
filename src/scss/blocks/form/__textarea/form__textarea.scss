@@ -2,9 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.phone {
+.form__textarea {
+    min-height: 152px;
+
     @include media-mobile {
-        font-size: 16px;
-        line-height: 22.72px;
+        min-height: 132px;
     }
 }
