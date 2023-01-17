@@ -7,7 +7,7 @@
     flex-direction: column;
     row-gap: 50px;
 
-    @include media-mobile {
+    @include media-tablet {
         row-gap: 20px;
     }
 }

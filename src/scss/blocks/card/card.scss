@@ -25,13 +25,11 @@
     }
 
     @include media-tablet {
-        height: auto;
-        padding: 30px;
         border-radius: 20px;
     }
 
     @include media-mobile {
-        height: 455px;
+        padding: 25px;
     }
 
     &::before {

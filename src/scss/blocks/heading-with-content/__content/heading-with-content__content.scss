@@ -4,4 +4,8 @@
 
 .heading-with-content__content {
 	margin-top: 30px;
+
+	@include media-mobile {
+		margin-top: 20px;
+	}
 }

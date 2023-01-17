@@ -2,11 +2,9 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta-small__content {
-    max-width: 371px;
-
+.form__button {
     @include media-tablet {
         width: 100%;
-        text-align: center;
+        padding: 12px 0;
     }
 }

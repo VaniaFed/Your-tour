@@ -2,11 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.dropdown__item {
+.form__input {
     width: 100%;
-    margin-top: 12px;
-
-    &:first-child {
-        margin-top: 0;
+    height: 68px;
+	
+    @include media-mobile {
+        height: 43px;
+        padding: 10px;
     }
 }

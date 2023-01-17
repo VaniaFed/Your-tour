@@ -4,4 +4,8 @@
 
 .cta__button {
 	margin-top: 50px;
+
+	@include media-mobile {
+		margin-top: 40px;
+	}
 }

@@ -8,4 +8,13 @@
 	&::before {
 		background: linear-gradient(270deg,transparent .01%,rgba(0,0,0,.2) 100%);
 	}
+
+    @include media-tablet {
+        padding: 40px;
+    }
+
+    @include media-mobile {
+        height: 455px;
+        padding: 30px;
+    }
 }

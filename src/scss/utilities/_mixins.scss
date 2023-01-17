@@ -15,6 +15,12 @@
     } 
 }
 
+@mixin h2_mobile {
+    font-size: 34px;
+    letter-spacing: .02em;
+    line-height: 38.08px;
+}
+
 @mixin h2 {
     @include Roboto;
     font-size: 59px;
@@ -43,6 +49,11 @@
     }
 }
 
+@mixin pMobile {
+    font-size: 16px;
+    line-height: 22.72px;
+}
+
 @mixin pBig {
     @include Roboto;
     font-size: 23px;
@@ -50,8 +61,7 @@
     line-height: 28.06px;
 
     @include media-mobile {
-        font-size: 16px;
-        line-height: 22.72px;
+        @include pMobile;
     }
 }
 
@@ -62,8 +72,7 @@
     line-height: 28.4px;
 
     @include media-mobile {
-        font-size: 16px;
-        line-height: 22.72px;
+        @include pMobile;
     }
 }
 
@@ -75,10 +84,6 @@
     letter-spacing: -.01em;
 
     @include media-mobile {
-        font-size: 16px;
-        line-height: 22.72px;
+        @include pMobile;
     }
-}
-
-@mixin input {
 }

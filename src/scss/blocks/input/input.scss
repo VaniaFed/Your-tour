@@ -4,8 +4,6 @@
 
 .input {
     @include pNormal;
-    width: 100%;
-    height: 68px;
     padding: 20px;
     background: $color-beige-100;
     border: 1px solid $color-beige-200;
@@ -34,10 +32,5 @@
     &::-webkit-inner-spin-button {
             display: none;
             -webkit-appearance: none;
-    }
-
-    @include media-mobile {
-        height: 43px;
-        padding: 10px;
     }
 }

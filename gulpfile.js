@@ -10,7 +10,6 @@ const htmlmin = require('gulp-htmlmin');
 const sync = require('browser-sync').create();
 const imageMin = require('gulp-imagemin');
 
-
 function html() {
     return src('src/**.html')
         .pipe(htmlmin({

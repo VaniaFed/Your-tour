@@ -4,4 +4,8 @@
 
 .card__price {
 	margin-top: 16px;
+
+	@include media-tablet {
+		margin-top: 13px;
+	}
 }

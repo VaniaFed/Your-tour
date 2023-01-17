@@ -2,6 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card__advantages {
-	margin-top: 25px;
+.link_with-icon {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }

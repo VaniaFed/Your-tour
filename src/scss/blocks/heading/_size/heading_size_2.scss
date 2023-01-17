@@ -5,9 +5,12 @@
     font-size: 59px;
     line-height: 73.16px;
 
+    @include media-tablet {
+        font-size: 48px;
+        line-height: 64.16px
+    }
+
     @include media-mobile {
-        font-size: 34px;
-        letter-spacing: .02em;
-        line-height: 38.08px;
+        @include h2_mobile;
     }
 }
