@@ -3,7 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .first-screen {
-	background: url(img/header/header-img.jpg) no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 20.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/header/header-img.jpg);
     background-size: cover;
     background-position-y: center;
     

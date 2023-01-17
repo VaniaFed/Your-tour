@@ -9,6 +9,6 @@
     color: $color-white;
     
     @include media-mobile {
-        word-wrap: break-word;
+        word-break: break-word;
     }
 }

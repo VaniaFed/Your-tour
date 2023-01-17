@@ -1,9 +1,0 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
-
-.card_height-mobile_318 {
-	@include media-mobile {
-		height: 318px;
-	}
-}
