@@ -3,9 +3,8 @@
 @import 'src/scss/utilities/mixins';
 
 .tab__item {
-    @include paragraph_size_big;
     position: relative;
-    cursor: pointer;
+	cursor: pointer;
 
     &:not(.tab__item_active):hover::after {
         content: '';

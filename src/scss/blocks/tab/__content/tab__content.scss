@@ -1,0 +1,12 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.tab__content {
+    @include paragraph_size_big;
+	padding: 0;
+	color: inherit;	
+	background: none;
+	border: none;
+	cursor: pointer;
+}
