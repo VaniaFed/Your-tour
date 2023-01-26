@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.button_type_more {
+.button_more {
     @include paragraph_size_big;
     display: flex;
     align-items: center;

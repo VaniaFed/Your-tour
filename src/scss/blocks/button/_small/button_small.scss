@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.button_type_small {
+.button_small {
     @include paragraph_size_sm;
     padding: 5px 20px;
 	background-color: $color-white;

@@ -1,7 +1,7 @@
 'use strict';
 
 const header = document.querySelector('.header');
-const logoPic = document.querySelector('.logo-pic');
+const logoPic = document.querySelector('.header__logo-pic');
 const links = document.querySelectorAll('.header .link');
 
 const positionYToMakeHeaderFixed = 450;
@@ -42,9 +42,9 @@ const makeLinksWhite = () => {
 
 
 const makeLogoBlack = () => {
-    logoPic.classList.add('logo-pic_color_black');
+    logoPic.classList.add('header__logo-pic_color_black');
 }
 
 const makeLogoWhite = () => {
-    logoPic.classList.remove('logo-pic_color_black');
+    logoPic.classList.remove('header__logo-pic_color_black');
 }
