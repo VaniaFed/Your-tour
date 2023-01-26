@@ -2,6 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta {
-    text-align: center;
+.first-screen__button {
+	margin-top: 50px;
+
+	@include media-mobile {
+		margin-top: 40px;
+	}
 }

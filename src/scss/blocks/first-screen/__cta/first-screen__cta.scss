@@ -7,6 +7,7 @@
     margin: 0 auto;
 	padding-top: calc(119px + 88px);
     padding-bottom: 119px;
+    text-align: center;
 
 	@include media-mobile {
 		padding-top: calc(52px + 88px);
