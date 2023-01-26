@@ -2,6 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-list_quantity_2-in-row {
-    grid-template-columns: 1fr 1fr;
+.tours__heading {
+	text-align: center;
+	color: $color-black;
 }

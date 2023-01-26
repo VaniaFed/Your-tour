@@ -2,10 +2,11 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.heading-with-content__paragraph {
-    max-width: 408px;
+.tours__tab {
+	min-height: 34px;
+	margin-top: 35px;
 
-    @include media-mobile {
-        width: 100%;
-    }
+	@include media-mobile {
+		margin-top: 30px;
+	}
 }
