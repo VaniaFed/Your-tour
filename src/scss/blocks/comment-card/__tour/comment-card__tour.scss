@@ -1,0 +1,9 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.comment-card__tour {
+	@include paragraph_size_sm;
+	margin-top: 8px;
+	color: $color-gray-300;
+}

@@ -2,6 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.user__trip {
-	margin-top: 8px;
+.comment-card__username {
+	@include heading_size_3;
+	color: $color-black;
 }
