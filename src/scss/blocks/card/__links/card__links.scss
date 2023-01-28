@@ -5,4 +5,9 @@
 .card__links {
     position: relative;
     right: -20px;
+    column-gap: 35px;
+
+    @include media-tablet {
+        display: none;
+    }
 }

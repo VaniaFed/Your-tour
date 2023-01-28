@@ -2,8 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card__advantages {
-	margin-top: 25px;
-    padding-left: 30px;
-    list-style-type: disc;
+.card__heading {
+	@include heading_size_3;
 }
