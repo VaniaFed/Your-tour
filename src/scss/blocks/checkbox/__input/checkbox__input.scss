@@ -5,7 +5,7 @@
 .checkbox__input {
     display: none;
     
-    &:checked + .fake-control_type_checkbox::after {
+    &:checked + .checkbox__fake-control::after {
         content: url(icons/checkbox-checked.svg);
 
         @include media-mobile {

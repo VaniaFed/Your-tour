@@ -2,10 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.radio__input {
-    display: none;
-
-    &:checked + .radio__fake-control::after {
-        opacity: 1;
-    }
+.form__select:required:invalid {
+	color: $color-gray-300;
 }

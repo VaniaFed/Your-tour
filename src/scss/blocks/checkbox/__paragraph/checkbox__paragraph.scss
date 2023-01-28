@@ -2,8 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.input_type_textarea {
-    display: flex;
-    flex-direction: column;
-    resize: none;
+.checkbox__paragraph {
+	@include paragraph_size_sm;
+	color: $color-gray-300;
 }

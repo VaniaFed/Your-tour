@@ -3,13 +3,21 @@
 @import 'src/scss/utilities/mixins';
 
 .form__row {
+	display: flex;
+    column-gap: 30px;
     margin-top: 33px;
 
     &:first-child {
         margin-top: 0;
     }
 
+    @include media-laptop {
+        column-gap: 20px;
+    }
+
     @include media-tablet {
+        flex-direction: column;
+        row-gap: 30px;
         margin-top: 30px;
     }
 }

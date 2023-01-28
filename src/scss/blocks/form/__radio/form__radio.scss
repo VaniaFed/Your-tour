@@ -5,6 +5,7 @@
 .form__radio {
     display: flex;
     column-gap: 31px;
+    margin-top: 8px;
 
     @include media-mobile {
         column-gap: 30px;

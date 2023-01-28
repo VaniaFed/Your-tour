@@ -2,7 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.label {
-    @include paragraph;
-    display: block;
+.form__option[value=""][disabled] {
+  display: none;
+}
+
+.form__option {
+	color: $color-black;
 }

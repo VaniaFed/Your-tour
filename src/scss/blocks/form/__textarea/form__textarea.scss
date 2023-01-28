@@ -3,9 +3,15 @@
 @import 'src/scss/utilities/mixins';
 
 .form__textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     min-height: 152px;
+    margin-top: 8px;
+    resize: none;
 
     @include media-mobile {
         min-height: 132px;
+        padding: 10px;
     }
 }

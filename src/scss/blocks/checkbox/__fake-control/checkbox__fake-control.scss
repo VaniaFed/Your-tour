@@ -2,8 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.fake-control_type_checkbox {
-    &::after {
+.checkbox__fake-control {
+	&::after {
         content: url(icons/checkbox.svg);
 
         @include media-mobile {
