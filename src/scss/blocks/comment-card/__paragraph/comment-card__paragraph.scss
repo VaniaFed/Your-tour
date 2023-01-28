@@ -5,4 +5,9 @@
 .comment-card__paragraph {
 	@include paragraph_size_big;
 	color: $color-black;
+	margin-top: 28px;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
