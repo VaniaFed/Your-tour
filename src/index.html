@@ -40,13 +40,13 @@
     <main class="main">
         <div class="first-screen main__first-screen">
             <div class="first-screen__cta container">
-                <h1 class="heading heading_size_1">Идеальные путешествия существуют</h1>
+                <h1 class="first-screen__heading heading">Идеальные путешествия существуют</h1>
                 <p class="first-screen__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 <button class="first-screen__button button button_small">Найти тур</button>
             </div>
         </div>
         <section class="tours container">
-            <h2 class="tours__heading heading heading_size_2">Выбери свой тур</h2>
+            <h2 class="tours__heading heading">Выбери свой тур</h2>
             <ul class="tours__tab tab">
                 <li class="tab__item tab__item_active"><button class="tab__content">Популярные</button></li>
                 <li class="tab__item"><button class="tab__content">Авторские</button></li>
@@ -59,7 +59,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-1.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -69,7 +69,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-2.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -79,7 +79,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-3.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -89,7 +89,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-4.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -99,7 +99,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-5.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -109,7 +109,7 @@
                     <img class="card__image" src="img/choose-your-tour/card tour photo-6.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="heading heading_size_3">Путешествие в горы</h3>
-                        <p class="card__price paragraph paragraph_size_sm">от 80 000 руб</p>
+                        <p class="card__price paragraph">от 80 000 руб</p>
                     </div>
                     <div class="card__bottom">
                         <button class="card__button button button_more">Подробнее</button>
@@ -118,16 +118,16 @@
             </ul>
         </section>
         <section class="request-tour container">
-            <h2 class="request-tour__heading heading heading_size_2">Собери свой тур</h2>
+            <h2 class="request-tour__heading heading">Собери свой тур</h2>
             <p class="request-tour__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
             <form class="request-tour__form form">
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="name" class="paragraph paragraph_color_black">Имя</label>
+                        <label for="name" class="form__label paragraph">Имя</label>
                         <input type="text" required minlength="3" maxlength="30" class="input form__input" id="name" placeholder="Введите Ваше имя">
                     </div>
                     <div class="form__field">
-                        <label for="direction" class="paragraph paragraph_color_black">Направление</label>
+                        <label for="direction" class="form__label paragraph">Направление</label>
                         <div class="form__input-wrapper">
                             <select id="trip" class="input form__input form__select" required>
                                 <option class="form__option" value="">Куда хотите ехать</option>
@@ -148,43 +148,43 @@
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="email" class="paragraph paragraph_color_black">Email</label>
+                        <label for="email" class="form__label paragraph">Email</label>
                         <input type="email" required minlength="6" maxlength="30" class="input form__input" id="email" placeholder="example@mail.com">
                     </div>
                     <div class="form__field">
-                        <label for="phone" class="paragraph paragraph_color_black">Телефон</label>
+                        <label for="phone" class="form__label paragraph">Телефон</label>
                         <input type="tel" required minlength="6" maxlength="12" class="input form__input" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="date-from" class="paragraph paragraph_color_black">Дата от</label>
+                        <label for="date-from" class="form__label paragraph">Дата от</label>
                         <input type="date" required minlength="8" maxlength="8" class="input form__input" id="date-from" placeholder="ДД.ММ.ГГГГ">
                     </div>
                     <div class="form__field">
-                        <label for="date-to" class="paragraph paragraph_color_black">Дата до</label>
+                        <label for="date-to" class="form__label paragraph">Дата до</label>
                         <input type="date" required minlength="8" maxlength="8" class="input form__input" id="date-to" placeholder="ДД.ММ.ГГГГ">
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label for="comment" class="paragraph paragraph_color_black">Комментарий</label>
+                        <label for="comment" class="form__label paragraph">Комментарий</label>
                         <textarea name="comment" id="comment" class="form__textarea input"></textarea>
                     </div>
                 </div>
                 <div class="form__row">
                     <div class="form__field">
-                        <label class="paragraph paragraph_color_black">Вам есть 18 лет?</label>
+                        <label class="form__label paragraph">Вам есть 18 лет?</label>
                         <div class="form__radio">
                             <label class="radio">
                                 <input type="radio" required name="age" class="radio__input">
                                 <span class="radio__fake-control fake-control"></span>
-                                <span class="paragraph paragraph_color_black">Да</span>
+                                <span class="form__label paragraph">Да</span>
                             </label>
                             <label class="radio">
                                 <input type="radio" required name="age" class="radio__input">
                                 <span class="radio__fake-control fake-control"></span>
-                                <span class="paragraph paragraph_color_black">Нет</span>
+                                <span class="form__label paragraph">Нет</span>
                             </label>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="form__row form__buttons">
                     <input type="submit" class="button form__button" value="Найти тур">
-                    <button class="button button_secondary form__button">Сбросить</button>
+                    <button class="form__button button button_secondary">Сбросить</button>
                 </div>
             </form>
         </section>
