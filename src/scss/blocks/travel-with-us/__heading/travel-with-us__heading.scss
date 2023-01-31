@@ -2,6 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta-small-content__link {
-    display: inline-block;
+.travel-with-us__heading {
+	@include heading_size_3;
+	color: $color-black;
 }

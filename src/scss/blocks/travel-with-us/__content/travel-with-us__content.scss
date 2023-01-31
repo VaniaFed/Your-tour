@@ -2,8 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta-small-content__heading {
-    @include media-small-notebook {
-        margin-top: 30px;
-    }
+.travel-with-us__content {
+    max-width: 371px;
 }

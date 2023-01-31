@@ -2,11 +2,15 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.cta-small__content {
-    max-width: 371px;
+.travel-with-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
 
     @include media-tablet {
-        width: 100%;
+        flex-direction: column;
+		row-gap: 30px;
         text-align: center;
     }
 }
