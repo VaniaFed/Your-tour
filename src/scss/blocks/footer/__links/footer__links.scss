@@ -2,8 +2,10 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.link_with-icon {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+.footer__links {
+	column-gap: calc(25px + 36px);
+
+	@include media-mobile {
+		column-gap: calc(15px + 36px);
+	}
 }

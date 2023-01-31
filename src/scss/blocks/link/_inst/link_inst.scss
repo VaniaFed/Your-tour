@@ -2,8 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-@include media-laptop {
-	.page__laptop-visibility-hidden {
-		display: none;
+.link_inst {
+	position: relative;
+
+	&::before {
+		content: url('icons/inst.svg');
+		position: absolute;
+		left: -36px;
 	}
 }

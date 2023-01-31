@@ -2,8 +2,6 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.our-socials__links {
-    @include media-tablet {
-        margin-top: 7px;
-    }
+.footer__paragraph {
+	color: $color-gray-300;
 }

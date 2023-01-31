@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.our-socials {
+.footer__socials {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,5 +14,9 @@
 
     @include media-mobile {
         padding: 21px;
+    }
+
+    @include media-mobile {
+        margin-top: 7px;
     }
 }

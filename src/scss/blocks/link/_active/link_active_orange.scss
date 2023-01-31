@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.link_active-color_orange {
+@mixin link_active_orange {
 	&:active {
 		color: $color-orange-200;
 	}

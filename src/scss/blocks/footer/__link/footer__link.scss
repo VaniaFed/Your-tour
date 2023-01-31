@@ -2,10 +2,11 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 @import 'src/scss/blocks/link/_color/link_color_black';
-@import 'src/scss/blocks/link/_active/link_active_green';
+@import 'src/scss/blocks/link/_active/link_active_orange';
 
-.travel-with-us__link {
-    display: inline-block;
+
+.footer__link {
+	display: inline-block;
 	@include link_color_black;
-	@include link_active_green;
+	@include link_active_orange;
 }

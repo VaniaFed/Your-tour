@@ -2,10 +2,14 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.link_color_black {
+@mixin link_color_black {
     color: $color-black;
 
     &:hover::after {
         background: $color-black;
     }
+}
+
+.link_color_black {
+    @include link_color_black;
 }

@@ -1,17 +1,12 @@
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
+@import 'src/scss/blocks/link/_color/link_color_black';
+@import 'src/scss/blocks/link/_active/link_active_green';
 
 .checkbox__link {
-	@include paragraph_size_sm;
     display: inline-block;
-    color: $color-black;
-    
-    &:active {
-        color: $color-green-400;
-    }
-    
-    &:active::after {
-        background-color: $color-green-400;
-    }
+    @include paragraph_size_sm;
+	@include link_color_black;
+	@include link_active_green;
 }

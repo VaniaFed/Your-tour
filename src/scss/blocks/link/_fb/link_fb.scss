@@ -2,8 +2,12 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-@include media-mobile {
-	.page__mobile-visibility-hidden {
-		display: none;
+.link_fb {
+	position: relative;
+
+	&::before {
+		content: url('icons/fb.svg');
+		position: absolute;
+		left: -36px;
 	}
 }

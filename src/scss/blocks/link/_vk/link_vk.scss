@@ -1,0 +1,14 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+@import 'src/scss/utilities/mixins';
+
+.link_vk {
+	position: relative;
+
+	&::before {
+		content: url('icons/vk.svg');
+		position: absolute;
+		display: block;
+		left: -36px;
+	}
+}
