@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.button_secondary {
+@mixin button_secondary {
 	background: $color-green-100;
 	color: $color-green-400;
 
@@ -13,4 +13,8 @@
 	&:active {
 		background: $color-gray-200;
 	}
+}
+
+.button_secondary {
+	@include button_secondary;
 }

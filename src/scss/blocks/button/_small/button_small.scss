@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.button_small {
+@mixin button_small {
     @include paragraph_size_sm;
     padding: 5px 20px;
 	background-color: $color-white;
@@ -18,4 +18,8 @@
         background: $color-orange-100;
         color: $color-black;
     }
+}
+
+.button_small {
+    @include button_small;
 }

@@ -1,8 +1,10 @@
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
+@import 'src/scss/blocks/button/_small/button_small';
 
 .first-screen__button {
+	@include button_small;
 	margin-top: 50px;
 
 	@include media-mobile {

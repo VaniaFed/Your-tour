@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.button_more {
+@mixin button_more {
     @include paragraph_size_big;
     display: flex;
     align-items: center;
@@ -27,4 +27,8 @@
         height: 26px;
         background: url('icons/arrow bt.svg');
     }
+}
+
+.button_more {
+    @include button_more;
 }
