@@ -1,7 +1,0 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
-
-.first-screen__heading {
-	@include heading_size_1;
-}

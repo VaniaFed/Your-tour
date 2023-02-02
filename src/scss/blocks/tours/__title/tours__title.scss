@@ -2,7 +2,8 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.comment-item__username {
-	@include title_size_3;
+.tours__title {
+	@include title_size_2;
+	text-align: center;
 	color: $color-black;
 }

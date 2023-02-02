@@ -2,10 +2,13 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.paragraph {
-    @include paragraph;
-    
+.travel-with-us__text {
+    margin-top: 20px;
+	color: $color-gray-300;
+
     @include media-mobile {
-        word-wrap: break-word;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
