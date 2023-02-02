@@ -1,10 +1,11 @@
+@import 'src/scss/blocks/paragraph/_size/paragraph_size_sm';
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 .card__price {
 	@include paragraph_size_sm;
 	margin-top: 16px;
+    color: $color-white;
 
 	@include media-tablet {
 		margin-top: 13px;

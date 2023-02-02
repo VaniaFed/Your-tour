@@ -1,7 +1,8 @@
+@import 'src/scss/blocks/title/_size/title_size_3';
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 .card__title {
 	@include title_size_3;
+    color: $color-white;
 }

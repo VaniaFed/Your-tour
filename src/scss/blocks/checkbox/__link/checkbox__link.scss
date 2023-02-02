@@ -1,12 +1,13 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
+@import 'src/scss/blocks/paragraph/_size/paragraph_size_sm';
 @import 'src/scss/blocks/link/_color/link_color_black';
 @import 'src/scss/blocks/link/_active/link_active_green';
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
 
 .checkbox__link {
-    display: inline-block;
-    @include paragraph_size_sm;
+	@include paragraph_size_sm;
 	@include link_color_black;
 	@include link_active_green;
+
+    display: inline-block;
 }

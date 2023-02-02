@@ -1,6 +1,6 @@
+@import 'src/scss/blocks/paragraph/paragraph';
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 .link {
     @include paragraph;

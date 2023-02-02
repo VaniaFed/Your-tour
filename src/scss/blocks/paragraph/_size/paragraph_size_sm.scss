@@ -1,0 +1,12 @@
+@import 'src/scss/utilities/variables';
+@import 'src/scss/utilities/media';
+
+@mixin paragraph_size_sm {
+    font-size: 17px;
+    line-height: 24.14px;
+    letter-spacing: -.01em;
+}
+
+.paragraph_size_sm {
+	@include paragraph_size_sm;
+}

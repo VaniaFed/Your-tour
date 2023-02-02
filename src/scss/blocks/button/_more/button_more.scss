@@ -1,6 +1,6 @@
+@import 'src/scss/blocks/paragraph/_size/paragraph_size_big';
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 @mixin button_more {
     @include paragraph_size_big;

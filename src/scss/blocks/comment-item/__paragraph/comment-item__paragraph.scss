@@ -1,6 +1,6 @@
+@import 'src/scss/blocks/paragraph/_size/paragraph_size_big';
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 .comment-item__paragraph {
 	@include paragraph_size_big;

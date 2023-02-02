@@ -1,6 +1,5 @@
 @import 'src/scss/utilities/variables';
 @import 'src/scss/utilities/media';
-@import 'src/scss/utilities/mixins';
 
 .card {
     position: relative;
@@ -8,7 +7,6 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    color: $color-white;
     border-radius: 50px;
 
     &:hover .card__button {
