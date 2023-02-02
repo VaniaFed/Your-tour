@@ -2,16 +2,16 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-review {
+.comment-item {
 	padding: 40px;
 	background: $color-beige-200;
 
-    @include media-mobile {
-        padding: 20px;
-        border-radius: 20px;
-    }
-
 	&::before {
 		background: none;
+	}
+
+	@include media-mobile {
+        padding: 20px;
+        border-radius: 20px;
 	}
 }

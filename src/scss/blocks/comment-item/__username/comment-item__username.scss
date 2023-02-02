@@ -2,10 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.card-review__paragarph {
-    margin-top: 28px;
-
-    &:first-child {
-        margin-top: 0;
-    }
+.comment-item__username {
+	@include heading_size_3;
+	color: $color-black;
 }

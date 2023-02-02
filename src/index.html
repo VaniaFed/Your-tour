@@ -17,7 +17,7 @@
     <header class="header page__header">
         <nav class="header__nav container container_size_1168">
             <a href="#" target="_blank">
-                <svg class="header__logo-pic" width="182" height="32" viewBox="0 0 182 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__logo" width="182" height="32" viewBox="0 0 182 32" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.476 0.879883L13.902 14.0679L20.412 0.879883H27.93L17.304 20.5359V30.6999H10.458V20.4519L0 0.879883H7.476Z" />
                     <path d="M36.8041 31.1199C34.2841 31.1199 32.1421 30.5879 30.3781 29.5239C28.6421 28.4599 27.3121 27.0599 26.3881 25.3239C25.4641 23.5879 25.0021 21.7119 25.0021 19.6959C25.0021 17.6519 25.4641 15.7619 26.3881 14.0259C27.3121 12.2899 28.6561 10.8899 30.4201 9.82588C32.1841 8.76188 34.3121 8.22988 36.8041 8.22988C39.2961 8.22988 41.4241 8.76188 43.1881 9.82588C44.9521 10.8899 46.2961 12.2899 47.2201 14.0259C48.1441 15.7619 48.6061 17.6519 48.6061 19.6959C48.6061 21.7119 48.1441 23.5879 47.2201 25.3239C46.2961 27.0599 44.9521 28.4599 43.1881 29.5239C41.4241 30.5879 39.2961 31.1199 36.8041 31.1199ZM31.8901 19.6959C31.8901 21.4039 32.3521 22.7899 33.2761 23.8539C34.2281 24.9179 35.4041 25.4499 36.8041 25.4499C38.1761 25.4499 39.3241 24.9179 40.2481 23.8539C41.2001 22.7899 41.6761 21.4039 41.6761 19.6959C41.6761 17.9879 41.2001 16.6019 40.2481 15.5379C39.3241 14.4739 38.1761 13.9419 36.8041 13.9419C35.4041 13.9419 34.2281 14.4739 33.2761 15.5379C32.3521 16.6019 31.8901 17.9879 31.8901 19.6959Z" />
                     <path d="M51.7289 22.7619V8.64988H58.4489V21.2919C58.4489 24.0639 59.4709 25.4499 61.5149 25.4499C62.4109 25.4499 63.2789 25.2119 64.1189 24.7359C64.9589 24.2319 65.7009 23.4059 66.3449 22.2579V8.64988H73.0649V23.2239C73.0649 23.8959 73.1629 24.3719 73.3589 24.6519C73.5829 24.9319 73.9609 25.0859 74.4929 25.1139V30.6999C73.8489 30.8119 73.3029 30.8959 72.8549 30.9519C72.4069 31.0079 72.0009 31.0359 71.6369 31.0359C69.2289 31.0359 67.8569 30.0979 67.5209 28.2219L67.3949 26.8779C66.3869 28.3339 65.1269 29.4119 63.6149 30.1119C62.1309 30.7839 60.4649 31.1199 58.6169 31.1199C56.3769 31.1199 54.6689 30.4059 53.4929 28.9779C52.3169 27.5499 51.7289 25.4779 51.7289 22.7619Z" />
@@ -28,7 +28,7 @@
                     <path d="M181.835 14.4039C180.211 14.4319 178.741 14.6979 177.425 15.2019C176.109 15.7059 175.157 16.4619 174.569 17.4699V30.6999H167.849V8.64988H174.023V13.1019C174.779 11.6179 175.759 10.4559 176.963 9.61588C178.167 8.77588 179.427 8.34188 180.743 8.31388C181.303 8.31388 181.667 8.32788 181.835 8.35588V14.4039Z" />
                 </svg>
             </a>
-            <ul class="header__links links">
+            <ul class="header__links">
                 <li><a class="link" href="#" target="_blank">Туры</a></li>
                 <li><a class="link" href="#" target="_blank">Создать тур</a></li>
                 <li><a class="link" href="#" target="_blank">Отзывы</a></li>
@@ -38,13 +38,13 @@
         </nav>
     </header>
     <main class="main">
-        <div class="first-screen main__first-screen">
+        <section class="main__first-screen first-screen">
             <div class="first-screen__cta container">
                 <h1 class="first-screen__heading heading">Идеальные путешествия существуют</h1>
                 <p class="first-screen__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
                 <button class="first-screen__button button">Найти тур</button>
             </div>
-        </div>
+        </section>
         <section class="tours container">
             <h2 class="tours__heading heading">Выбери свой тур</h2>
             <ul class="tours__tab tab">
@@ -54,8 +54,8 @@
                 <li class="tab__item"><button class="tab__content">Сплавы</button></li>
                 <li class="tab__item"><button class="tab__content">Велопрогулки</button></li>
             </ul>
-            <ul class="tours__card-list card-list">
-                <li class="tours__card card">
+            <ul class="tours__list card-list">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-1.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -65,7 +65,7 @@
                         <button class="card__button button">Подробнее</button>
                     </div>
                 </li>
-                <li class="tours__card card">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-2.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -75,7 +75,7 @@
                         <button class="card__button button">Подробнее</button>
                     </div>
                 </li>
-                <li class="tours__card card">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-3.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -85,7 +85,7 @@
                         <button class="card__button button">Подробнее</button>
                     </div>
                 </li>
-                <li class="tours__card card">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-4.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -95,7 +95,7 @@
                         <button class="card__button button">Подробнее</button>
                     </div>
                 </li>
-                <li class="tours__card card">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-5.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -105,7 +105,7 @@
                         <button class="card__button button">Подробнее</button>
                     </div>
                 </li>
-                <li class="tours__card card">
+                <li class="tours__item card">
                     <img class="card__image" src="img/choose-your-tour/card tour photo-6.jpg" alt="Путешествие в горы">
                     <div class="card__top">
                         <h3 class="card__heading heading">Путешествие в горы</h3>
@@ -207,26 +207,26 @@
         <section class="comment container">
             <h2 class="comment__heading heading">Отзывы наших путешественников</h2>
             <p class="comment__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            <ul class="comment__card-list card-list">
-                <li class="comment-card card">
-                    <p class="comment-card__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
-                    <div class="comment-card__bottom">
-                        <div class="comment-card__content">
-                            <h3 class="comment-card__username heading">Мария</h3>
-                            <div class="comment-card__tour paragraph">Тур: Вдали от дома</div>
+            <ul class="comment__list card-list">
+                <li class="comment-item card">
+                    <p class="comment-item__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
+                    <div class="comment-item__bottom">
+                        <div class="comment-item__content">
+                            <h3 class="comment-item__username heading">Мария</h3>
+                            <div class="comment-item__tour paragraph">Тур: Вдали от дома</div>
                         </div>
-                        <img src="img/reviews/review photo-1.jpg" alt="Мария" class="comment-card__avatar">
+                        <img src="img/reviews/review photo-1.jpg" alt="Мария" class="comment-item__avatar">
                     </div>
                 </li>
-                <li class="comment-card card">
-                    <p class="comment-card__paragraph paragraph">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
-                    <p class="comment-card__paragraph paragraph">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
-                    <div class="comment-card__bottom">
-                        <div class="comment-card__content">
-                            <h3 class="comment-card__username heading">Павел</h3>
-                            <div class="comment-card__tour paragraph">Тур: Путешествия в горы</div>
+                <li class="comment-item card">
+                    <p class="comment-item__paragraph paragraph">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+                    <p class="comment-item__paragraph paragraph">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
+                    <div class="comment-item__bottom">
+                        <div class="comment-item__content">
+                            <h3 class="comment-item__username heading">Павел</h3>
+                            <div class="comment-item__tour paragraph">Тур: Путешествия в горы</div>
                         </div>
-                        <img src="img/reviews/review photo-2.jpg" alt="Павел" class="comment-card__avatar">
+                        <img src="img/reviews/review photo-2.jpg" alt="Павел" class="comment-item__avatar">
                     </div>
                 </li>
             </ul>
@@ -234,7 +234,7 @@
         <section class="photos">
             <h2 class="photos__heading heading">Фотографии путешествий</h2>
             <p class="photos__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            <div class="photos__list container">
+            <div class="photos__list">
                 <img class="photos__item" src="img/Traveler's Photos/travel photo-1.png" alt="aaa">
                 <img class="photos__item" src="img/Traveler's Photos/travel photo-2.png" alt="aaa">
                 <img class="photos__item" src="img/Traveler's Photos/travel photo-3.png" alt="aaa">
@@ -253,8 +253,8 @@
         <section class="stories container">
             <h2 class="stories__heading heading">Истории путешествий</h2>
             <p class="stories__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            <ul class="stories__card-list">
-                <li class="card card-storie">
+            <ul class="stories__list">
+                <li class="stories-item card">
                     <img class="card__image" src="img/Traveler's Stories/story photo-1.jpg" alt="Автостопом в Стамбул">
                     <div class="card__top">
                         <h3 class="card__heading heading">Автостопом в Стамбул</h3>
@@ -265,9 +265,9 @@
                             <li>красивый город.</li>
                         </ul>
                     </div>
-                    <div class="card-storie__bottom">
+                    <div class="stories-item__bottom">
                         <button class="card__button button">Подробнее</button>
-                        <ul class="card__links links">
+                        <ul class="card__links">
                             <li>
                                 <a class="card__link link" href="#">instagram</a>
                             </li>
@@ -280,15 +280,15 @@
                         </ul>
                     </div>
                 </li>
-                <li class="card card-storie">
+                <li class="stories-item card">
                     <img class="card__image" src="img/Traveler's Stories/story photo-2.jpg" alt="Автостопом в Стамбул">
                     <div class="card__top">
                         <h3 class="card__heading heading">Автостопом в Стамбул</h3>
-                        <p class="card__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                        <p class="card__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
                     </div>
-                    <div class="card-storie__bottom">
+                    <div class="stories-item__bottom">
                         <button class="card__button button">Подробнее</button>
-                        <ul class="card__links links">
+                        <ul class="card__links">
                             <li>
                                 <a class="card__link link" href="#">instagram</a>
                             </li>
@@ -298,15 +298,15 @@
                         </ul>
                     </div>
                 </li>
-                <li class="card card-storie">
+                <li class="stories-item card">
                     <img class="card__image" src="img/Traveler's Stories/story photo-3.jpg" alt="Автостопом в Стамбул">
                     <div class="card__top">
                         <h3 class="card__heading heading">Автостопом в Стамбул</h3>
-                        <p class="card__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                        <p class="card__paragraph paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
                     </div>
-                    <div class="card-storie__bottom">
+                    <div class="stories-item__bottom">
                         <button class="card__button button">Подробнее</button>
-                        <ul class="card__links links">
+                        <ul class="card__links">
                             <li>
                                 <a class="card__link link" href="#">instagram</a>
                             </li>
@@ -332,7 +332,7 @@
     <footer class="footer page__footer">
         <div class="footer__socials container container_size_1168">
             <p class="footer__paragraph paragraph">Наши социальные сети</p>
-            <ul class="footer__links links">
+            <ul class="footer__links">
                 <li><a href="#" class="footer__link link link_inst" target="_blank">instagram</a></li>
                 <li><a href="#" class="footer__link link link_fb" target="_blank">facebook</a></li>
                 <li><a href="#" class="footer__link link link_vk" target="_blank">vkontakte</a></li>

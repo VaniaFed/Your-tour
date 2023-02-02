@@ -3,6 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .header__links {
+    display: flex;
     column-gap: 50px;
 
     @include media-laptop {

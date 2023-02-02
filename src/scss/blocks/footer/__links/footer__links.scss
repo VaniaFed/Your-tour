@@ -3,6 +3,7 @@
 @import 'src/scss/utilities/mixins';
 
 .footer__links {
+	display: flex;
 	column-gap: calc(25px + 36px);
 
 	@include media-mobile {

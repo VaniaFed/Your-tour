@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.comment-card__paragraph {
+.comment-item__paragraph {
 	@include paragraph_size_big;
 	color: $color-black;
 	margin-top: 28px;

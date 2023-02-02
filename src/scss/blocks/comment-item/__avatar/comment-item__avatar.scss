@@ -2,7 +2,7 @@
 @import 'src/scss/utilities/media';
 @import 'src/scss/utilities/mixins';
 
-.comment-card__username {
-	@include heading_size_3;
-	color: $color-black;
+.comment-item__avatar {
+    width: 75px;
+    border-radius: 50px;
 }
