@@ -2,9 +2,9 @@
 @import 'src/scss/utilities/media';
 
 .form__buttons {
-	@include media-laptop {
-		column-gap: 30px;
-	}
+	display: flex;
+	column-gap: 30px;
+    margin-top: 33px;
 
 	@include media-tablet {
 		flex-direction: row;		
@@ -12,5 +12,6 @@
 
 	@include media-mobile {
 		column-gap: 10px;
+        margin-top: 30px;
 	}
 }

@@ -3,6 +3,8 @@
 
 .tab__item {
     position: relative;
+    display: flex;
+    height: 34px;
 	cursor: pointer;
 
     &:not(.tab__item_active):hover::after {
@@ -18,5 +20,9 @@
         @include media-mobile {
             bottom: 0;
         }
+    }
+
+    @include media-mobile {
+        height: 23px;
     }
 }

@@ -6,7 +6,7 @@
 	background: $color-beige-200;
 
 	&::before {
-		background: none;
+		content: none;
 	}
 
 	@include media-mobile {
