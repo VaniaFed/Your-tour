@@ -1,7 +1,0 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-@import 'src/scss/blocks/button/_more/button_more';
-
-.card__button {
-	@include button_more;
-}

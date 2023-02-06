@@ -1,8 +1,0 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-
-.main__first-screen {
-    @include media-tablet {
-        max-height: 1024px;
-    }
-}
