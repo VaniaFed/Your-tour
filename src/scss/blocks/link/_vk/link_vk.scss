@@ -7,7 +7,11 @@
 	&::before {
 		content: url('icons/vk.svg');
 		position: absolute;
-		display: block;
 		left: -36px;
+
+		@include media-mobile {
+			content: url('icons/vk_mob.svg');
+			left: -25px;
+		}
 	}
 }

@@ -13,9 +13,6 @@
 
     @include media-mobile {
         padding: 21px;
-    }
-
-    @include media-mobile {
-        margin-top: 7px;
+        row-gap: 7px;
     }
 }

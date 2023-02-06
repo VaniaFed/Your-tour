@@ -3,6 +3,7 @@
 
 .tab__item {
     position: relative;
+    display: flex;
 	cursor: pointer;
 
     &:not(.tab__item_active):hover::after {
