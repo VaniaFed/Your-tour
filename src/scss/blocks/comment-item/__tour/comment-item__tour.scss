@@ -1,9 +1,0 @@
-@import 'src/scss/blocks/paragraph/_size/paragraph_size_sm';
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-
-.comment-item__tour {
-	@include paragraph_size_sm;
-	margin-top: 8px;
-	color: $color-gray-300;
-}

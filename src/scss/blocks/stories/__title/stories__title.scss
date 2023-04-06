@@ -1,9 +1,0 @@
-@import 'src/scss/blocks/title/_size/title_size_2';
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-
-.stories__title {
-	@include title_size_2;
-	text-align: center;
-	color: $color-black;
-}

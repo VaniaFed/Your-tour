@@ -1,9 +1,0 @@
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-
-.form__button {
-    @include media-tablet {
-        width: 100%;
-        padding: 12px 0;
-    }
-}

@@ -1,9 +1,0 @@
-@import 'src/scss/blocks/paragraph/paragraph';
-@import 'src/scss/utilities/variables';
-@import 'src/scss/utilities/media';
-
-.section-subtitle {
-	@include paragraph;
-	text-align: center;
-	color: $color-gray-300;
-}
