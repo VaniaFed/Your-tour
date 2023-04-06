@@ -9,4 +9,8 @@
 		column-gap: calc(15px + 25px);
 		margin-right: -25px;
 	}
+
+	@include media-mobile-sm {
+		flex-direction: column;
+	}
 }

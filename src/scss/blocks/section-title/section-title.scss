@@ -6,12 +6,4 @@
 	@include title_size_2;
 	text-align: center;
 	color: $color-black;
-
-	@include media-tablet {
-		word-break: break-all;
-	}
-
-	@include media-mobile {
-		word-break: keep-all;
-	}
 }

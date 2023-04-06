@@ -2,15 +2,27 @@
 @import 'src/scss/utilities/media';
 
 @mixin title_size_2 {
-    font-size: 59px;
-    font-weight: 700;
-    line-height: 73.16px;
+	font-size: 59px;
+	font-weight: 700;
+	line-height: 73.16px;
 
-    @include media-mobile {
-        font-size: 34px;
-        letter-spacing: .02em;
-        line-height: 38.08px;
-    }
+	@include media-tablet {
+		font-size: 48px;
+		letter-spacing: 0.01em;
+		line-height: 56px;
+	}
+
+	@include media-mobile {
+		font-size: 34px;
+		letter-spacing: 0.02em;
+		line-height: 38.08px;
+	}
+
+	@include media-mobile-sm {
+		font-size: 24px;
+		letter-spacing: -0.01em;
+		line-height: 28.08px;
+	}
 }
 
 .title_size_2 {
